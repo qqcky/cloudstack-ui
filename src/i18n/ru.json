@@ -80,7 +80,7 @@
     "VOLUME": {
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот диск?",
       "CONFIRM_DETACHMENT": "Вы уверены, что хотите открепить этот диск?",
-      "CONFIRM_CREATION": "У вас нет виртуальных машин. При создании виртуальной машины на основе шаблона, диск создается автоматически.<br>Вы действительно хотите создать дополнительный диск?"
+      "CONFIRM_CREATION": "У вас нет виртуальных машин. При создании виртуальной машины на основе шаблона, диск создается автоматически.<br><br>Вы действительно хотите создать дополнительный диск?"
     }
   },
   "ERRORS": {
@@ -756,7 +756,7 @@
       "DEFAULT_RULE_PORT_RANGE": "{{ type }} <b>{{ protocol }}</b> трафик до адреса <b>{{ cidr }}</b>, интервал портов: <b>{{ startPort }}-{{ endPort }}</b>",
       "DEFAULT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> трафик до адреса <b>{{ cidr }}</b>,  ICMP тип: <b>{{ icmpTypeText }} [{{ icmpType }}]</b>, ICMP код: <b>{{ icmpCodeText }} [{{ icmpCode }}]</b>",
       "NO_TEXT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> трафик до адреса <b>{{ cidr }}</b>,  ICMP тип: <b>{{ icmpType }}</b>, ICMP код: <b>{{ icmpCode }}</b>",
-      "NO_CODE_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> трафик до адреса <b>{{ cidr }}</b>,  ICMP тип: <b>{{ icmpTypeText }} [{{ icmpType }}]</b>, ICMP код: <b>{{ icmpCode }}</b>",
+      "NO_CODE_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> трафик до адреса <b>{{ cidr }}</b>, ICMP тип: <b>{{ icmpTypeText }} [{{ icmpType }}]</b>, ICMP код: <b>{{ icmpCode }}</b> ",
       "DEFAULT_RULE_NOMARKUP": "{{ type }} {{ protocol }} трафик до адреса {{ cidr }}, порт: {{ startPort }}",
       "DEFAULT_RULE_PORT_RANGE_NOMARKUP": "{{ type }} {{ protocol }} трафик до адреса {{ cidr }}, интервал портов: {{ startPort }}-{{ endPort }}",
       "DEFAULT_ICMP_RULE_NOMARKUP": "{{ type }} {{ protocol }} трафик до адреса {{ cidr }},  ICMP тип: {{ icmpTypeText }} [{{ icmpType }}], ICMP код: {{ icmpCodeText }} [{{ icmpCode }}]",
