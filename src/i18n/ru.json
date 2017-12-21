@@ -44,7 +44,7 @@
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить данного пользователя?",
       "CONFIRM_EDIT": "Вы уверены, что вы хотите изменить этого пользователя?",
       "CONFIRM_CHANGE_PASSWORD": "Вы уверены, что вы хотите изменить пароль для этого пользователя?",
-      "CONFIRM_REGENERATE_KEY": "Are you sure you want to regenerate key for this user?"
+      "CONFIRM_REGENERATE_KEY": "Вы уверены, что хотите сгенерировать новые ключи пользователя?"
     },
     "ISO": {
       "CONFIRM_DETACHMENT": "Вы уверены, что хотите открепить этот ISO файл?",
@@ -184,8 +184,8 @@
       "RESET_PASSWORD_IN_PROGRESS": "Сброс пароля",
       "RESET_PASSWORD_DONE": "Пароль сброшен",
       "RESET_PASSWORD_FAILED": "Не удалось сбросить пароль",
-      "SAVE_PASSWORD_DONE": "Password saved",
-      "SAVE_PASSWORD_FAILED": "Failed to save password",
+      "SAVE_PASSWORD_DONE": "Пароль сохранен",
+      "SAVE_PASSWORD_FAILED": "Не удалось сохранить пароль",
       "DESTROY_IN_PROGRESS": "Удаление ВМ",
       "DESTROY_DONE": "ВМ была удалена",
       "DESTROY_FAILED": "Не удалось удалить ВМ",
@@ -1010,7 +1010,7 @@
     "CREATION": {
       "CREATE_ACCOUNT": "Новый аккаунт",
       "USER_NAME": "Имя аккаунта",
-      "EMAIL": "Email",
+      "EMAIL": "Электронная почта",
       "PASSWORD": "Пароль",
       "FIRST_NAME": "Имя",
       "LAST_NAME": "Фамилия",
@@ -1094,7 +1094,7 @@
       "FIRST_NAME": "Имя",
       "LAST_NAME": "Фамилия",
       "TIMEZONE": "Часовой пояс",
-      "EMAIL": "Email",
+      "EMAIL": "Электронная почта",
       "API_KEY": "API ключ",
       "SECRET_KEY": "Секретный ключ"
     }
