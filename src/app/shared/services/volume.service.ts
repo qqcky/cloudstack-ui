@@ -3,10 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 import { BackendResource } from '../decorators';
-import {
-  Snapshot,
-  Volume
-} from '../models';
+import { Volume } from '../models';
 import { AsyncJobService } from './async-job.service';
 import { BaseBackendService } from './base-backend.service';
 import { SnapshotService } from './snapshot.service';
