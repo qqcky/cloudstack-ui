@@ -27,18 +27,18 @@ export class SnapshotItemComponent {
   };
 
   public get statusClass() {
-    return [
+    const state = [
       SnapshotStates.BackedUp,
       SnapshotStates.BackingUp,
       SnapshotStates.Allocated,
       SnapshotStates.Creating,
       SnapshotStates.Error
-    ].filter(state => this.item.state === state)
-      .map((state) => (state === SnapshotStates.BackingUp)
-        ? 'backing-up'
-        : state === SnapshotStates.BackedUp
-          ? 'backed-up'
-          : state.toLowerCase());
+    ].find(s => this.item.state === s);
+    return (state === SnapshotStates.BackingUp)
+      ? 'backing-up'
+      : state === SnapshotStates.BackedUp
+        ? 'backed-up'
+        : state.toLowerCase();
   }
 
   public get snapshotCreated() {

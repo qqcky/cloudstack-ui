@@ -3,12 +3,24 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
 import { BackendResource } from '../decorators';
-import { Volume, isDeleted, VolumeCreationData } from '../models';
+import { Volume, isDeleted } from '../models';
 import { AsyncJobService } from './async-job.service';
 import { BaseBackendService } from './base-backend.service';
 import { SnapshotService } from './snapshot.service';
 import { VolumeTagService } from './tags/volume-tag.service';
 import { AsyncJob } from '../models/async-job.model';
+
+export interface VolumeFromSnapshotCreationData {
+  name: string;
+  snapshotId: string;
+}
+
+interface VolumeCreationData {
+  name: string;
+  zoneId: string;
+  diskOfferingId: string;
+  size?: number;
+}
 
 export interface VolumeFromSnapshotCreationData {
   name: string;
