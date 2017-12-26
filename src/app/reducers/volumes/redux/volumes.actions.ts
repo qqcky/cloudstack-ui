@@ -6,6 +6,7 @@ export const LOAD_VOLUMES_RESPONSE = '[VOLUMES] LOAD_VOLUMES_RESPONSE';
 export const VOLUME_FILTER_UPDATE = '[VOLUMES] VOLUME_FILTER_UPDATE';
 export const LOAD_SELECTED_VOLUME = '[VOLUMES] LOAD_SELECTED_VOLUME';
 export const CREATE_VOLUME = '[VOLUMES] CREATE_VOLUME';
+export const CREATE_VOLUME_FROM_SNAPSHOT = '[VOLUMES] CREATE_VOLUME_FROM_SNAPSHOT';
 export const DELETE_VOLUME = '[VOLUMES] DELETE_VOLUME';
 export const UPDATE_VOLUME = '[VOLUMES] UPDATE_VOLUME';
 export const REPLACE_VOLUME = '[VOLUMES] REPLACE_VOLUME';
@@ -164,6 +165,13 @@ export class ChangeDescription implements Action {
   }
 }
 
+export class CreateVolumeFromSnapshot implements Action {
+  readonly type = CREATE_VOLUME_FROM_SNAPSHOT;
+
+  constructor(public payload: VolumeFromSnapshotCreationData) {
+  }
+}
+
 export type Actions = LoadVolumesRequest
   | LoadVolumesResponse
   | VolumeFilterUpdate
@@ -177,4 +185,5 @@ export type Actions = LoadVolumesRequest
   | AttachVolumeToVM
   | DetachVolume
   | ResizeVolume
-  | ChangeDescription;
+  | ChangeDescription
+  | CreateVolumeFromSnapshot;

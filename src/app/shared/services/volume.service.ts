@@ -17,6 +17,11 @@ interface VolumeCreationData {
   size?: number;
 }
 
+export interface VolumeFromSnapshotCreationData {
+  name: string;
+  snapshotId: string;
+}
+
 export interface VolumeAttachmentData {
   id: string;
   virtualMachineId: string;
@@ -68,6 +73,11 @@ export class VolumeService extends BaseBackendService<Volume> {
   }
 
   public create(data: VolumeCreationData): Observable<Volume> {
+    return this.sendCommand('create', data).switchMap(job =>
+      this.asyncJobService.queryJob(job.jobid, this.entity, this.entityModel)
+    );
+  }
+  public createFromSnapshot(data: VolumeFromSnapshotCreationData): Observable<Volume> {
     return this.sendCommand('create', data).switchMap(job =>
       this.asyncJobService.queryJob(job.jobid, this.entity, this.entityModel)
     );
