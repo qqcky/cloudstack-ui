@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Snapshot } from '../../../../shared/models';
 import { SnapshotActions, SnapshotActionService } from './snapshot-action.service';
+import { SnapshotActionService } from './snapshot-action.service';
 
 @Component({
   selector: 'cs-snapshot-action',
