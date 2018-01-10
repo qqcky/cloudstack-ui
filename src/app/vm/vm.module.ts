@@ -22,7 +22,6 @@ import { PulseModule } from '../pulse/pulse.module';
 import { ServiceOfferingModule } from '../service-offering/service-offering.module';
 import { DraggableSelectModule } from '../shared/components/draggable-select/draggable-select.module';
 import { SharedModule } from '../shared/shared.module';
-import { SnapshotActionsService } from '../snapshot/snapshot-actions.service';
 // tslint:disable-next-line
 import { SnapshotModule } from '../snapshot/snapshot.module';
 import { TagsModule } from '../tags/tags.module';
@@ -231,8 +230,7 @@ import { VirtualMachineCreationEffects } from '../reducers/vm/redux/vm-creation.
     VmActionsService,
     VmEntityDeletionService,
     VmService,
-    WebShellService,
-    SnapshotActionsService,
+    WebShellService
   ],
   entryComponents: [
     AffinityGroupSelectorComponent,
