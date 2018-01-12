@@ -51,7 +51,8 @@
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот ISO файл?"
     },
     "SNAPSHOT": {
-      "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот снимок?"
+      "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот снимок?",
+      "CONFIRM_REVERTING": "Are you sure you want to revert the owning volume to this snapshot?"
     },
     "TAG": {
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот тег?"
@@ -277,6 +278,7 @@
     "VMS": "Виртуальные<br>машины",
     "STORAGE": "Хранилище",
     "IMAGES": "Образы",
+    "SNAPSHOTS": "Snapshots",
     "FIREWALL_TEMPLATES": "Брандмауэр",
     "ACTIVITY_LOG": "Журнал событий",
     "SSH_KEYS": "SSH ключи",
@@ -702,6 +704,24 @@
       "BOOTABLE": "Загружаемый",
       "SHOW_ADDITIONAL": "Показать дополнительные параметры",
       "HIDE_ADDITIONAL": "Скрыть дополнительные параметры"
+    }
+  },
+  "SNAPSHOT_PAGE": {
+    "CARD": {
+      "VOLUME": "Volume",
+      "VM": "Virtual Machine",
+      "VOLUME_DELETED": "Deleted",
+      "CREATED": "Created"
+    },
+    "FILTERS": {
+      "VOLUME": "Volume",
+      "VM": "Virtual Machines"
+    },
+    "ACTIONS": {
+      "CREATE_TEMPLATE": "Create template",
+      "CREATE_VOLUME": "Create volume",
+      "REVERT_TO_SNAPSHOT": "Revert volume to snapshot",
+      "DELETE_SNAPSHOT": "Delete"
     }
   },
   "SECURITY_GROUP_PAGE": {
