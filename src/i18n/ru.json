@@ -52,7 +52,7 @@
     },
     "SNAPSHOT": {
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот снимок?",
-      "CONFIRM_REVERTING": "Are you sure you want to revert the owning volume to this snapshot?"
+      "CONFIRM_REVERTING": "Вы уверены, что хотите вернуть владеющий диск к состоянию этого снимка?"
     },
     "TAG": {
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот тег?"
@@ -278,7 +278,7 @@
     "VMS": "Виртуальные<br>машины",
     "STORAGE": "Хранилище",
     "IMAGES": "Образы",
-    "SNAPSHOTS": "Snapshots",
+    "SNAPSHOTS": "Снимки",
     "FIREWALL_TEMPLATES": "Брандмауэр",
     "ACTIVITY_LOG": "Журнал событий",
     "SSH_KEYS": "SSH ключи",
@@ -708,20 +708,20 @@
   },
   "SNAPSHOT_PAGE": {
     "CARD": {
-      "VOLUME": "Volume",
-      "VM": "Virtual Machine",
-      "VOLUME_DELETED": "Deleted",
-      "CREATED": "Created"
+      "VOLUME": "Диск",
+      "VM": "Виртуальная машина",
+      "VOLUME_DELETED": "Удален",
+      "CREATED": "Создан"
     },
     "FILTERS": {
-      "VOLUME": "Volume",
-      "VM": "Virtual Machines"
+      "VOLUME": "Диск",
+      "VM": "Виртуальные машины"
     },
     "ACTIONS": {
-      "CREATE_TEMPLATE": "Create template",
-      "CREATE_VOLUME": "Create volume",
-      "REVERT_TO_SNAPSHOT": "Revert volume to snapshot",
-      "DELETE_SNAPSHOT": "Delete"
+      "CREATE_TEMPLATE": "Создать шаблон",
+      "CREATE_VOLUME": "Создать диск",
+      "REVERT_TO_SNAPSHOT": "Вернуть диск к снимку",
+      "DELETE_SNAPSHOT": "Удалить"
     }
   },
   "SECURITY_GROUP_PAGE": {
