@@ -254,7 +254,7 @@
       "SHARED_GROUP_CREATED": "Ang ibinabahaging grupo na {{ name }} ay matagumpay na nagawa",
       "SHARED_GROUP_DELETED": "Ang ibinahaging grupo na {{ name }} ay matagumpay na natanggal",
       "PRIVATE_GROUP_DELETED": "Tagumpay na na-delete ang pribadong grupo {{ name }}",
-      "CONVERT_PRIVATE_TO_SHARED": "Private group {{ name }} converted to Shared successfully"
+      "CONVERT_PRIVATE_TO_SHARED": "{{ name }} ng pribadong grupo ay nagbalik-loob matagumpay na ibinahagi"
     },
     "ACCOUNT": {
       "USER_CREATED": "User {{ username }} ay matagumpay na nagawa",
@@ -282,7 +282,7 @@
     "FIREWALL_TEMPLATES": "Firewall",
     "ACTIVITY_LOG": "Talaan ng Aktibidad",
     "SSH_KEYS": "SSH keys",
-    "ACCOUNTS": "Accounts",
+    "ACCOUNTS": "Mga Account",
     "SETTINGS": "Settings",
     "LOGOUT": "Logout",
     "LICENSE": {
@@ -347,34 +347,34 @@
     },
     "SIDEBAR": {
       "VM": "Virtual machine",
-      "STORAGE": "Storage",
+      "STORAGE": "Imbakan",
       "NETWORK": "Network",
-      "TAGS": "Tags"
+      "TAGS": "Mga Tag"
     },
     "VM_DETAILS": {
-      "COLOR": "Color",
-      "DESCRIPTION": "Description",
+      "COLOR": "Kulay",
+      "DESCRIPTION": "Paglalarawan",
       "ZONE": "Zone",
       "INSTANCE_GROUP": {
-        "TITLE": "Group",
-        "NO_GROUP": "No group",
-        "CHANGE_INSTANCE_GROUP": "Change instance group",
-        "CREATE_NEW_GROUP": "Create a new group",
-        "CHOOSE_EXISTING_GROUP": "Choose an existing group",
-        "CHOOSE_GROUP": "Choose a group",
-        "ENTER_GROUP_NAME": "Enter group name",
-        "REMOVE_FROM_GROUP": "Remove from the group \"{{ value }}\""
+        "TITLE": "Grupo",
+        "NO_GROUP": "Walang grupo",
+        "CHANGE_INSTANCE_GROUP": "Baguhin ang instance ng grupo",
+        "CREATE_NEW_GROUP": "Gumawa ng bagong grupo",
+        "CHOOSE_EXISTING_GROUP": "Pumili ng umiiral na grupo",
+        "CHOOSE_GROUP": "Pumili ng grupo",
+        "ENTER_GROUP_NAME": "Maglagay ng pangalan ng grupo",
+        "REMOVE_FROM_GROUP": "Tanggalin mula sa grupo na \"{{ value }}\""
       },
       "SERVICE_OFFERING": {
-        "TITLE": "Service offering",
-        "name": "Name",
-        "description": "Description",
-        "cpuNumber": "CPU cores",
-        "cpuSpeed": "CPU (MHz)",
+        "TITLE": "Pag-aalok ng serbisyo",
+        "name": "Pangalan",
+        "description": "Paglalarawan",
+        "cpuNumber": "Mga core ng CPU",
+        "cpuSpeed": "CPU(MHz)",
         "memory": "Memory (MB)",
-        "displayText": "Description",
-        "storageType": "Storage type",
-        "provisioningType": "Provisioning type",
+        "displayText": "Paglalarawan",
+        "storageType": "Uri ng imbakan",
+        "provisioningType": "Uri ng provisioning",
         "offerHa": "High availability",
         "networkRate": "Network rate",
         "minIops": "Min IO/s",
