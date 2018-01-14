@@ -70,8 +70,8 @@
       "CONFIRM_RECOVER": "Sigurado ka bang gusto mong mabawi ang virtual machine na ito?",
       "CONFIRM_RESET_PASSWORD": "Sigurado ka bang gusto mong i-reset ang password?<br>Kung ang iyong Virtual Machine ay nagtatakbo, ito ay mari-reboot.",
       "PASSWORD_DIALOG_MESSAGE": "Password for {{ vmName }} has been reset to <b>{{ vmPassword }}</b>",
-      "CONFIRM_DRIVES_DELETION": "Delete this VM's data drives?",
-      "CONFIRM_SAVE_PASSWORD": "Do you want to save a password for all VMs?"
+      "CONFIRM_DRIVES_DELETION": "Burahin ang mga data drive ng VM?",
+      "CONFIRM_SAVE_PASSWORD": "Gusto mo bang i-save ng isang password sa lahat ng mga VM?"
     },
     "SECURITY_GROUPS": {
       "CONFIRM_EDIT_FROM_VM": "This group is shared. Other VMs that use this group will also be affected. Are you sure you want to edit this group in the Security Group management area?",
