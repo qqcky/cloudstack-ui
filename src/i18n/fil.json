@@ -22,20 +22,20 @@
     "RESET": "I-reset",
     "SAVE": "I-save",
     "SAVED": "Na-save",
-    "SELECT": "Select",
-    "SELECT_ALL": "Select all",
-    "STATUS": "Status",
-    "TYPE": "Type",
-    "UPDATE": "Update",
-    "VIEW": "View",
-    "YES": "Yes",
-    "SEARCH": "Search",
-    "CONTINUE": "Continue",
-    "AGREE": "I agree"
+    "SELECT": "Piliin",
+    "SELECT_ALL": "Piliin lahat",
+    "STATUS": "Estado",
+    "TYPE": "Uri",
+    "UPDATE": "I-update",
+    "VIEW": "Tingnan",
+    "YES": "Oo",
+    "SEARCH": "Hanapin",
+    "CONTINUE": "Ipagpatuloy",
+    "AGREE": "Sumasang-ayon ako"
   },
   "DIALOG_MESSAGES": {
     "ACCOUNT": {
-      "CONFIRM_DELETION": "Are you sure you want to delete this account?",
+      "CONFIRM_DELETION": "Sigurado ka bang gusto mong tanggalin ang account na ito?",
       "CONFIRM_DISABLE": "Are you sure you want to disable this account?",
       "CONFIRM_ENABLE": "Are you sure you want to enable this account?",
       "CONFIRM_LOCK": "Are you sure you want to lock this account?"
