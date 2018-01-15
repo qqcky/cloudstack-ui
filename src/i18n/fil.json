@@ -401,74 +401,74 @@
       },
       "AFFINITY_GROUP": {
         "TITLE": "Grupo ng pagkahawig",
-        "NO_AFFINITY_GROUP": "No affinity group",
-        "NO_AFFINITY_GROUPS": "No affinity groups",
-        "SELECT_AFFINITY_GROUP": "Select affinity group",
-        "CREATE_NEW_GROUP": "Create a new group",
-        "CHOOSE_EXISTING_GROUP": "Choose an existing group",
-        "CHOOSE_GROUP": "Choose a group",
-        "ENTER_GROUP_NAME": "Enter group name",
-        "REMOVE_FROM_GROUP": "Remove from the group \"{{ value }}\"",
-        "STOP_MACHINE_FOR_AG": "You need to stop the virtual machine to change affinity group. Do you want to stop it now?"
+        "NO_AFFINITY_GROUP": "Walang grupo ng pagkakahawig",
+        "NO_AFFINITY_GROUPS": "Walang mga grupo ng pagkakahawig",
+        "SELECT_AFFINITY_GROUP": "Pumili ng grupo ng pagkakahawig",
+        "CREATE_NEW_GROUP": "Lumikha ang bagong grupo",
+        "CHOOSE_EXISTING_GROUP": "Pumili ng umiiral na grupo",
+        "CHOOSE_GROUP": "Pumili ng grupo",
+        "ENTER_GROUP_NAME": "Ipasok ang pangalan ng grupo",
+        "REMOVE_FROM_GROUP": "Tanggalin mula sa grupo \"{{ value }}\"",
+        "STOP_MACHINE_FOR_AG": "Kailangan mong ihinto ang virtual machine para mabago ang grupo ng pagkakahawig. Gusto mo bang ihinto na ito ngayon?"
       },
       "TEMPLATE": "Template",
       "SSH_KEY": {
         "TITLE": "SSH key",
-        "NO_SSH_KEY": "No SSH key",
-        "NO_SSH_KEYS": "No SSH keys",
-        "SELECT_SSH_KEY": "Select SSH key",
-        "STOP_MACHINE_FOR_SSH": "You need to stop the virtual machine to reset SSH key. Do you want to stop it now?"
+        "NO_SSH_KEY": "Walang SSH key",
+        "NO_SSH_KEYS": "Walang mga SSH Key",
+        "SELECT_SSH_KEY": "Pumili ng SSH key",
+        "STOP_MACHINE_FOR_SSH": "Kailangan mong ihinto ang virtual machine upang ma-reset ang SSH key. Gusto mo bang ihinto na ito ngayon?"
       },
       "STATISTICS": {
-        "TITLE": "Statistics",
-        "CPU_UTILIZED": "CPU utilized",
-        "NETWORK_READ": "Network read",
-        "NETWORK_WRITE": "Network write",
-        "DISK_READ": "Disk read",
-        "DISK_WRITE": "Disk write",
-        "DISK_READ_IO": "Disk read (IO)",
-        "DISK_WRITE_IO": "Disk write (IO)"
+        "TITLE": "Istatistika",
+        "CPU_UTILIZED": "Ginamit ng CPU",
+        "NETWORK_READ": "Pagbasa ng network",
+        "NETWORK_WRITE": "Pagsulat sa network",
+        "DISK_READ": "Pagbasa ng disk",
+        "DISK_WRITE": "Pagsulat ng disk",
+        "DISK_READ_IO": "Pagbasa ng disk (IO)",
+        "DISK_WRITE_IO": "Pagsulat ng disk (IO)"
       }
     },
     "STORAGE_DETAILS": {
       "VOLUME_DETAILS": {
-        "GENERAL_INFORMATION": "General information",
-        "SIZE": "Size",
-        "DESCRIPTION": "Description",
-        "CREATED": "Created",
-        "STORAGE_TYPE": "Storage type",
+        "GENERAL_INFORMATION": "Pangkalahatang Impormasyon",
+        "SIZE": "Laki",
+        "DESCRIPTION": "Paglalarawan",
+        "CREATED": "Nalikha",
+        "STORAGE_TYPE": "Uri ng storage",
         "DISK_OFFERING": "Disk offering",
-        "PERFORMANCE": "Performance",
+        "PERFORMANCE": "Kakayanan",
         "MIN_IOPS": "Min IO/s",
         "MAX_IOPS": "Max IO/s",
-        "READ_RATE_MB": "Read rate",
-        "WRITE_RATE_MB": "Write rate",
-        "READ_RATE_IOPS": "Read rate (IO/s)",
-        "WRITE_RATE_IOPS": "Write rate (IO/s)"
+        "READ_RATE_MB": "Rate ng pagbasa",
+        "WRITE_RATE_MB": "Rate ng pagsulat",
+        "READ_RATE_IOPS": "Rate ng pagbasa (IO/s)",
+        "WRITE_RATE_IOPS": "Rate ng pagsulat (IO/s)"
       },
       "VOLUME_RESIZE": {
-        "TITLE": "Resize volume",
+        "TITLE": "Baguhin ang laki ng volume",
         "DISK_OFFERING": "Disk offering",
-        "NEW_SIZE": "New size",
-        "NO_AVAILABLE_OFFERINGS": "No available offerings",
-        "RESIZE": "Resize"
+        "NEW_SIZE": "Bagong laki",
+        "NO_AVAILABLE_OFFERINGS": "Walang magagamit na offerings",
+        "RESIZE": "Baguhin ang laki"
       },
       "SNAPSHOT_CREATION": {
-        "TAKE_SNAPSHOT": "Take a snapshot",
-        "NAME": "Name",
-        "DESCRIPTION": "Description"
+        "TAKE_SNAPSHOT": "Kumuhu ng snapshot",
+        "NAME": "Pangalan",
+        "DESCRIPTION": "Paglalarawan"
       },
       "SNAPSHOTS_LIST": {
-        "LAST_SNAPSHOT": "Last snapshot",
-        "VIEW_ALL": "View all",
-        "NO_SNAPSHOTS": "No snapshots"
+        "LAST_SNAPSHOT": "Huling snapshot",
+        "VIEW_ALL": "Tingnan lahat",
+        "NO_SNAPSHOTS": "Walang mga snapshot"
       },
       "SNAPSHOT_ACTIONS": {
-        "CREATE_TEMPLATE": "Create a template",
-        "REVERT_TO_SNAPSHOT": "Revert disk to this snapshot"
+        "CREATE_TEMPLATE": "Lumikha ng template",
+        "REVERT_TO_SNAPSHOT": "Ibalik ang disk sa snapshot na ito"
       },
       "SNAPSHOTS_MODAL": {
-        "TITLE": "Snapshots",
+        "TITLE": "Mga snapshot",
         "NAME": "Pangalan",
         "DESCRIPTION": "Paglalarawan",
         "DATE": "Petsa",
