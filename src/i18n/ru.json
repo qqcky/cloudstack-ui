@@ -711,6 +711,7 @@
       "VOLUME": "Диск",
       "VM": "Виртуальная машина",
       "VOLUME_DELETED": "Удален",
+      "VM_DELETED": "Deleted",
       "CREATED": "Создан"
     },
     "FILTERS": {
