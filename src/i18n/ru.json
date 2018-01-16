@@ -712,6 +712,7 @@
       "VOLUME": "Диск",
       "VM": "Виртуальная машина",
       "VOLUME_DELETED": "Удален",
+      "VM_DELETED": "Удалена",
       "CREATED": "Создан"
     },
     "FILTERS": {

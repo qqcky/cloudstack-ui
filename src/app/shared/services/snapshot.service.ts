@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { BackendResource } from '../decorators';
-import { Snapshot } from '../models';
+import { AsyncJob, Snapshot } from '../models';
 import { AsyncJobService } from './async-job.service';
 import { BaseBackendCachedService } from './base-backend-cached.service';
 import { SnapshotTagService } from './tags/snapshot-tag.service';
@@ -53,7 +53,7 @@ export class SnapshotService extends BaseBackendCachedService<Snapshot> {
       .switchMap(job => this.asyncJobService.queryJob(job.jobid));
   }
 
-  public revert(id: string): Observable<any> {
+  public revert(id: string): Observable<AsyncJob<Snapshot>> {
     return this.sendCommand('revert', { id })
       .switchMap(job => this.asyncJobService.queryJob(job.jobid));
   }
