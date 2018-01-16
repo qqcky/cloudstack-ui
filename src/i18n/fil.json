@@ -82,7 +82,7 @@
     "VOLUME": {
       "CONFIRM_DELETION": "Gusto mo bang tanggalin ang volume na ito?",
       "CONFIRM_DETACHMENT": "Gusto mo bang alisin ang volune na ito?",
-      "CONFIRM_CREATION": "Wala kang nagawang VM. kapag ang isang VM ay nagawa mula sa isang template, ang isang disk ay awtomatikong nalikha.<br><br>Gusto mo bang gumawa ng karagdagang disk?"
+      "CONFIRM_CREATION": "Wala kang nagawang VM. kapag ang isang VM ay nagawa mula sa isang template, ang isang disk ay awtomatikong malilikha.<br><br>Sigurado ka ba na gusto mong gumawa ng karagdagang disk?"
     }
   },
   "ERRORS": {
