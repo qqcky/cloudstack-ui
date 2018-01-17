@@ -12,8 +12,8 @@ import {
   MatTooltipModule
 } from '@angular/material';
 import { TranslateModule } from '@ngx-translate/core';
+import { DraggableSelectModule } from '../shared/components/draggable-select/draggable-select.module';
 import { SharedModule } from '../shared/shared.module';
-// tslint:disable-next-line
 // tslint:disable-next-line
 import { SnapshotActionsComponent } from '../volume/volume-sidebar/snapshot-details/snapshot/snapshot-actions/snapshot-actions.component';
 import { DayOfWeekComponent } from './recurring-snapshots/day-of-week/day-of-week.component';
@@ -29,6 +29,8 @@ import { RecurringSnapshotsComponent } from './recurring-snapshots/recurring-sna
 import { SnapshotPolicyService } from './recurring-snapshots/snapshot-policy.service';
 import { StoredNumberComponent } from './recurring-snapshots/stored-number/stored-number.component';
 import { TimePickerComponent } from './recurring-snapshots/time-picker/time-picker.component';
+import { SnapshotFilterComponent } from './snapshots-page/snapshot-filter/snapshot-filter.component';
+import { SnapshotFilterContainerComponent } from './snapshots-page/snapshot-filter/snapshot-filter.container';
 // tslint:disable-next-line
 import { SnapshotActionComponent } from './snapshots-page/snapshot-list-item/snapshot-actions/snapshot-action.component';
 // tslint:disable-next-line
@@ -46,6 +48,7 @@ import { SnapshotsPageContainerComponent } from './snapshots-page/snapshots-page
 @NgModule({
   imports: [
     CommonModule,
+    DraggableSelectModule,
     FormsModule,
     TranslateModule,
     MatTooltipModule,
@@ -84,7 +87,9 @@ import { SnapshotsPageContainerComponent } from './snapshots-page/snapshots-page
     SnapshotActionContainerComponent,
     SnapshotActionComponent,
     CreateVolumeFromSnapshotContainerComponent,
-    CreateVolumeFromSnapshotComponent
+    CreateVolumeFromSnapshotComponent,
+    SnapshotFilterContainerComponent,
+    SnapshotFilterComponent
   ],
   providers: [
     PolicyViewBuilderService,

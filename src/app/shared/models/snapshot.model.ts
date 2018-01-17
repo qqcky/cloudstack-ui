@@ -18,6 +18,14 @@ export enum SnapshotPageMode {
   VM = 'vm'
 }
 
+export enum SnapshotType {
+  Manual = 'MANUAL',
+  Hourly = 'HOURLY',
+  Daily = 'DAILY',
+  Weekly = 'WEEKLY',
+  Monthly = 'MONTHLY',
+}
+
 export interface Snapshot extends Taggable, BaseModelInterface {
   description: string;
   id: string;
@@ -25,6 +33,7 @@ export interface Snapshot extends Taggable, BaseModelInterface {
   physicalsize: number;
   volumeid?: string;
   virtualmachineid?: string;
+  snapshottype: SnapshotType;
   name: string;
   tags: Array<Tag>;
   state: SnapshotStates,

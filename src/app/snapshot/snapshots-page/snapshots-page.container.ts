@@ -15,6 +15,7 @@ import * as vmActions from '../../reducers/vm/redux/vm.actions';
     <cs-snapshots-page
       [snapshots]="snapshots$ | async"
       [isLoading]="isLoading$ | async"
+      [groupings]="selectedGroupings$ | async"
       [volumes]="volumes$ | async"
       [virtualMachines]="virtualMachines$ | async"
     ></cs-snapshots-page>`
@@ -24,6 +25,7 @@ export class SnapshotsPageContainerComponent implements OnInit {
   readonly volumes$ = this.store.select(fromVolumes.selectEntities);
   readonly virtualMachines$ = this.store.select(fromVMs.selectEntities);
   readonly isLoading$ = this.store.select(fromSnapshots.isLoading);
+  readonly selectedGroupings$ = this.store.select(fromSnapshots.filterSelectedGroupings);
 
   constructor(private store: Store<State>) {
   }

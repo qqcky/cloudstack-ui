@@ -1,7 +1,7 @@
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 import { Dictionary } from '@ngrx/entity/src/models';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { Snapshot, SnapshotPageMode } from '../../../shared/models';
+import { Snapshot, SnapshotPageMode, SnapshotType } from '../../../shared/models';
 
 import * as snapshot from './snapshot.actions';
 import * as volume from '../../volumes/redux/volumes.actions';
@@ -14,7 +14,12 @@ export interface State {
 export interface ListState extends EntityState<Snapshot> {
   loading: boolean,
   filters: {
-    mode: SnapshotPageMode
+    mode: SnapshotPageMode,
+    selectedAccounts: string[],
+    selectedTypes: SnapshotType[],
+    selectedDate: Date,
+    selectedGroupings: any[],
+    query: string,
   }
   snapshotIdsByVolumeId: Dictionary<string[]>
 }
@@ -33,7 +38,12 @@ export const adapter: EntityAdapter<Snapshot> = createEntityAdapter<Snapshot>({
 export const initialListState: ListState = adapter.getInitialState({
   loading: false,
   filters: {
-    mode: SnapshotPageMode.Volume
+    mode: SnapshotPageMode.Volume,
+    selectedAccounts: [],
+    selectedTypes: [],
+    selectedDate: new Date(),
+    selectedGroupings: [],
+    query: '',
   },
   snapshotIdsByVolumeId: {}
 });
@@ -159,6 +169,43 @@ export const selectFilteredSnapshots = createSelector(
     const filterByViewMode = (snapshot: Snapshot) =>
       (filter.mode === SnapshotPageMode.Volume && !!snapshot.volumeid)
       || (filter.mode === SnapshotPageMode.VM && !!snapshot.virtualmachineid);
-    return snapshots.filter((snapshot: Snapshot) => filterByViewMode(snapshot));
+
+    const filterByTypes = (snapshot: Snapshot) => !filter.selectedTypes.length
+      || filter.selectedTypes.find(type => type === snapshot.snapshottype);
+
+    const filterByAccount = (snapshot: Snapshot) => !filter.selectedAccounts.length
+      || filter.selectedAccounts.find(id => id === snapshot.account);
+
+    const filterByDate = (snapshot: Snapshot) => moment(snapshot.created)
+      .isSame(moment(filter.selectedDate));
+
+    return snapshots.filter((snapshot: Snapshot) => filterByViewMode(snapshot)
+      && filterByAccount(snapshot) && filterByTypes(snapshot) && filterByDate(snapshot));
   }
 );
+
+export const filterSelectedAccounts = createSelector(
+  filters,
+  state => state.selectedAccounts
+);
+
+export const filterSelectedTypes = createSelector(
+  filters,
+  state => state.selectedTypes
+);
+
+export const filterSelectedDate = createSelector(
+  filters,
+  state => state.selectedDate
+);
+
+export const filterSelectedGroupings = createSelector(
+  filters,
+  state => state.selectedGroupings
+);
+
+export const filterQuery = createSelector(
+  filters,
+  state => state.query
+);
+

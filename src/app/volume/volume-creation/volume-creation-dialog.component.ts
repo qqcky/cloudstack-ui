@@ -17,7 +17,6 @@ import { AuthService } from '../../shared/services/auth.service';
   styleUrls: ['volume-creation-dialog.component.scss']
 })
 export class VolumeCreationDialogComponent {
-
   public newVolume = new VolumeCreationData();
 
   @Input() public isLoading: boolean;
