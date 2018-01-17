@@ -82,6 +82,7 @@ export class VolumeService extends BaseBackendService<Volume> {
       this.asyncJobService.queryJob(job.jobid, this.entity, this.entityModel)
     ).switchMap((response: AsyncJob<Volume>)  => Observable.of(response.jobresult['volume']));
   }
+
   public createFromSnapshot(data: VolumeFromSnapshotCreationData): Observable<Volume> {
     return this.sendCommand('create', data).switchMap(job =>
       this.asyncJobService.queryJob(job.jobid, this.entity, this.entityModel)
