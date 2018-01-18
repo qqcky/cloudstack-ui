@@ -30,12 +30,14 @@
       multiple="true"
       [placeholder]="'SNAPSHOT_PAGE.FILTERS.GROUP_BY' | translate"
       [ngModel]="selectedGroupings"
-      [dragItems]="groupings"
+      [dragItems]="availableGroupings"
       (selectionChange)="selectedGroupingsChange.emit($event.value)"
     >
-      <mat-option *ngFor="let g of availableGroupings" [value]="g">
-        {{ g.label | translate }}
-      </mat-option>
+      <ng-container *ngFor="let g of availableGroupings">
+        <mat-option *ngIf="!g.hidden()" [value]="g">
+          {{ g.label | translate }}
+        </mat-option>
+      </ng-container>
     </cs-draggable-select>
   </mat-form-field>
 

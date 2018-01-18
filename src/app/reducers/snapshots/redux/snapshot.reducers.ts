@@ -1,7 +1,12 @@
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 import { Dictionary } from '@ngrx/entity/src/models';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { Snapshot, SnapshotPageMode, SnapshotType } from '../../../shared/models';
+import {
+  getDateSnapshotCreated,
+  Snapshot,
+  SnapshotPageMode,
+  SnapshotType
+} from '../../../shared/models';
 
 import * as snapshot from './snapshot.actions';
 import * as volume from '../../volumes/redux/volumes.actions';
@@ -162,28 +167,6 @@ export const viewMode = createSelector(
   state => state.mode
 );
 
-export const selectFilteredSnapshots = createSelector(
-  selectAll,
-  filters,
-  (snapshots, filter) => {
-    const filterByViewMode = (snapshot: Snapshot) =>
-      (filter.mode === SnapshotPageMode.Volume && !!snapshot.volumeid)
-      || (filter.mode === SnapshotPageMode.VM && !!snapshot.virtualmachineid);
-
-    const filterByTypes = (snapshot: Snapshot) => !filter.selectedTypes.length
-      || filter.selectedTypes.find(type => type === snapshot.snapshottype);
-
-    const filterByAccount = (snapshot: Snapshot) => !filter.selectedAccounts.length
-      || filter.selectedAccounts.find(id => id === snapshot.account);
-
-    const filterByDate = (snapshot: Snapshot) => moment(snapshot.created)
-      .isSame(moment(filter.selectedDate));
-
-    return snapshots.filter((snapshot: Snapshot) => filterByViewMode(snapshot)
-      && filterByAccount(snapshot) && filterByTypes(snapshot) && filterByDate(snapshot));
-  }
-);
-
 export const filterSelectedAccounts = createSelector(
   filters,
   state => state.selectedAccounts
@@ -209,3 +192,38 @@ export const filterQuery = createSelector(
   state => state.query
 );
 
+export const selectFilteredSnapshots = createSelector(
+  selectAll,
+  filters,
+  (snapshots, filter) => {
+    const filterByViewMode = (snapshot: Snapshot) =>
+      (filter.mode === SnapshotPageMode.Volume && !!snapshot.volumeid)
+      || (filter.mode === SnapshotPageMode.VM && !!snapshot.virtualmachineid);
+
+    const filterByTypes = (snapshot: Snapshot) => !filter.selectedTypes.length
+      || !!filter.selectedTypes.find(type => type === snapshot.snapshottype);
+
+    const filterByAccount = (snapshot: Snapshot) => !filter.selectedAccounts.length
+      || !!filter.selectedAccounts.find(id => id === snapshot.account);
+
+    const filterByDate = (snapshot: Snapshot) => !filter.selectedDate
+      || moment(snapshot.created).isBetween(
+        moment(filter.selectedDate),
+        moment(filter.selectedDate).add(1, 'days')
+      );
+
+    const queryLower = filter.query && filter.query.toLowerCase();
+    const filterByQuery = (snapshot: Snapshot) => !filter.query
+      || snapshot.name.toLowerCase().indexOf(queryLower) > -1
+      || snapshot.description && snapshot.description.toLowerCase()
+        .indexOf(queryLower) > -1
+      || getDateSnapshotCreated(snapshot).toString().indexOf(queryLower) > -1;
+
+    return snapshots.filter((snapshot: Snapshot) =>
+      filterByViewMode(snapshot)
+      && filterByAccount(snapshot)
+      && filterByTypes(snapshot)
+      && filterByDate(snapshot)
+      && filterByQuery(snapshot));
+  }
+);

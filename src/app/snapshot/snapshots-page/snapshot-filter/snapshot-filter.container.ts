@@ -1,8 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { State } from '../../../reducers';
 import { Snapshot, SnapshotType } from '../../../shared/models';
+import { AuthService } from '../../../shared/services/auth.service';
 import { FilterService } from '../../../shared/services/filter.service';
 import { LanguageService } from '../../../shared/services/language.service';
 import { SessionStorageService } from '../../../shared/services/session-storage.service';
@@ -12,9 +13,7 @@ import * as accountActions from '../../../reducers/accounts/redux/accounts.actio
 import * as fromAccounts from '../../../reducers/accounts/redux/accounts.reducers';
 import * as fromSnapshots from '../../../reducers/snapshots/redux/snapshot.reducers';
 import * as snapshotActions from '../../../reducers/snapshots/redux/snapshot.actions';
-import * as vmActions from '../../../reducers/vm/redux/vm.actions';
 import * as zoneActions from '../../../reducers/zones/redux/zones.actions';
-import { VirtualMachine, VmState } from '../../../vm/shared/vm.model';
 
 const getGroupName = (snapshot: Snapshot) => {
   return snapshot.domain !== 'ROOT'
@@ -60,7 +59,7 @@ export class SnapshotFilterContainerComponent extends WithUnsubscribe() implemen
   private filterService = new FilterService({
     accounts: { type: 'array', defaultOption: [] },
     types: { type: 'array', defaultOption: [] },
-    date: { type: 'Date', defaultOption: new Date() },
+    date: { type: 'string' },
     groupings: { type: 'array', defaultOption: [] },
     query: { type: 'string' }
   }, this.router, this.storage, this.filtersKey, this.activatedRoute);
@@ -89,13 +88,15 @@ export class SnapshotFilterContainerComponent extends WithUnsubscribe() implemen
       key: 'accounts',
       label: 'SNAPSHOT_PAGE.FILTERS.GROUP_BY_ACCOUNTS',
       selector: (item: Snapshot) => item.account,
-      name: (item: Snapshot) => getGroupName(item)
+      name: (item: Snapshot) => getGroupName(item),
+      hidden: () => !this.authService.isAdmin()
     }, {
       key: 'types',
       label: 'SNAPSHOT_PAGE.FILTERS.GROUP_BY_TYPES',
       selector: (item: Snapshot) => item.snapshottype,
-      name: (item: Snapshot) => `SNAPSHOT_PAGE.TYPES.${ item.snapshottype }`
-    },
+      name: (item: Snapshot) => `SNAPSHOT_PAGE.TYPES.${ item.snapshottype }`,
+      hidden: () => false
+    }
   ];
 
   constructor(
@@ -103,7 +104,8 @@ export class SnapshotFilterContainerComponent extends WithUnsubscribe() implemen
     private router: Router,
     private storage: SessionStorageService,
     private activatedRoute: ActivatedRoute,
-    private language: LanguageService
+    private language: LanguageService,
+    private authService: AuthService
   ) {
     super();
   }
@@ -118,6 +120,7 @@ export class SnapshotFilterContainerComponent extends WithUnsubscribe() implemen
         this.filterService.update({
           accounts: filters.selectedAccounts,
           types: filters.selectedTypes,
+          date: filters.selectedDate,
           groupings: filters.selectedGroupings.map(_ => _.key),
           query: filters.query
         });
@@ -128,6 +131,7 @@ export class SnapshotFilterContainerComponent extends WithUnsubscribe() implemen
     const params = this.filterService.getParams();
     const selectedAccounts = params['accounts'];
     const selectedTypes = params['types'];
+    const selectedDate = params['date'];
     const selectedGroupings = params['groupings'].reduce((acc, _) => {
       const grouping = this.groupings.find(g => g.key === _);
       if (grouping) {
@@ -140,6 +144,7 @@ export class SnapshotFilterContainerComponent extends WithUnsubscribe() implemen
     this.store.dispatch(new snapshotActions.SnapshotFilterUpdate({
       selectedAccounts,
       selectedTypes,
+      selectedDate,
       selectedGroupings,
       query
     }));
