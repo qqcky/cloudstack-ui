@@ -380,8 +380,12 @@ mat-card-actions {
   background-color: #388E3C;
 }
 
-.in-progress, .backing-up, .allocated {
+.in-progress, .backing-up, .creating {
   background-color: #FFA726;
+}
+
+.allocated {
+  background-color: #FFFFFF;
 }
 
 .stopped, .disabled, .locked,
