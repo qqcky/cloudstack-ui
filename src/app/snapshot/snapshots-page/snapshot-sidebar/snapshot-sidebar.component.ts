@@ -3,7 +3,7 @@ import { Dictionary } from '@ngrx/entity/src/models';
 import {
   getDateSnapshotCreated,
   getSnapshotDescription,
-  Snapshot, Volume
+  Snapshot, SnapshotStates, Volume
 } from '../../../shared/models';
 
 @Component({
@@ -14,6 +14,14 @@ export class SnapshotSidebarComponent {
   @Input() public snapshot: Snapshot;
   @Input() public volumes: Dictionary<Volume>;
   @Input() public isLoading: boolean;
+
+  public stateTranslations = {
+    [SnapshotStates.BackedUp]: 'SNAPSHOT_STATE.BACKEDUP',
+    [SnapshotStates.BackingUp]: 'SNAPSHOT_STATE.BACKINGUP',
+    [SnapshotStates.Creating]: 'SNAPSHOT_STATE.CREATING',
+    [SnapshotStates.Allocated]: 'SNAPSHOT_STATE.ALLOCATED',
+    [SnapshotStates.Error]: 'SNAPSHOT_STATE.ERROR',
+  };
 
   public get notFound(): boolean {
     return !this.snapshot;
@@ -33,5 +41,20 @@ export class SnapshotSidebarComponent {
 
   public get volume() {
     return this.snapshot.volumeid && this.volumes && this.volumes[this.snapshot.volumeid];
+  }
+
+  public get statusClass() {
+    return [
+      SnapshotStates.BackedUp,
+      SnapshotStates.BackingUp,
+      SnapshotStates.Allocated,
+      SnapshotStates.Creating,
+      SnapshotStates.Error
+    ].filter(state => this.snapshot.state === state)
+      .map((state) => (state === SnapshotStates.BackingUp)
+        ? 'backing-up'
+        : state === SnapshotStates.BackedUp
+          ? 'backed-up'
+          : state.toLowerCase());
   }
 }

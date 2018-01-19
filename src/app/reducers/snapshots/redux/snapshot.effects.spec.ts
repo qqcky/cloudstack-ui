@@ -11,7 +11,7 @@ import { of } from 'rxjs/observable/of';
 import { MockDialogService } from '../../../../testutils/mocks/mock-dialog.service';
 import { MockSnapshotTagService } from '../../../../testutils/mocks/tag-services/mock-snapshot-tag.service';
 import { DialogService } from '../../../dialog/dialog-service/dialog.service';
-import { Snapshot, SnapshotStates } from '../../../shared/models';
+import { Snapshot, SnapshotStates, SnapshotType } from '../../../shared/models';
 import { AsyncJobService } from '../../../shared/services/async-job.service';
 import { JobsNotificationService } from '../../../shared/services/jobs-notification.service';
 import { SnapshotService } from '../../../shared/services/snapshot.service';
@@ -43,7 +43,8 @@ const snapshots: Array<Snapshot> = [
     name: 'snapshot for testing',
     tags: [],
     state: SnapshotStates.BackedUp,
-    revertable: false
+    revertable: false,
+    snapshottype: SnapshotType.Manual
   }
 ];
 
