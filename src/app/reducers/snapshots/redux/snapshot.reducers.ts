@@ -16,7 +16,8 @@ export interface ListState extends EntityState<Snapshot> {
   filters: {
     mode: SnapshotPageMode
   }
-  snapshotIdsByVolumeId: Dictionary<string[]>
+  snapshotIdsByVolumeId: Dictionary<string[]>,
+  selectedSnapshotId: string
 }
 
 const sortByCreation = (snapshot1: Snapshot, snapshot2: Snapshot) => {
@@ -35,7 +36,8 @@ export const initialListState: ListState = adapter.getInitialState({
   filters: {
     mode: SnapshotPageMode.Volume
   },
-  snapshotIdsByVolumeId: {}
+  snapshotIdsByVolumeId: {},
+  selectedSnapshotId: ''
 });
 
 export interface SnapshotState {
@@ -112,6 +114,12 @@ export function listReducer(
         ...adapter.removeOne(action.payload.id, newState)
       };
     }
+    case snapshot.LOAD_SELECTED_SNAPSHOT: {
+      return {
+        ...state,
+        selectedSnapshotId: action.payload
+      };
+    }
     default: {
       return state;
     }
@@ -150,6 +158,11 @@ export const filters = createSelector(
 export const viewMode = createSelector(
   filters,
   state => state.mode
+);
+
+export const getSelectedSnapshot = createSelector(
+  getSnapshotEntitiesState,
+  state => state.entities[state.selectedSnapshotId]
 );
 
 export const selectFilteredSnapshots = createSelector(

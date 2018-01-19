@@ -18,17 +18,29 @@ export enum SnapshotPageMode {
   VM = 'vm'
 }
 
+export enum SnapshotType {
+  Manual = 'MANUAL',
+  Hourly = 'HOURLY',
+  Daily = 'DAILY',
+  Weekly = 'WEEKLY',
+  Monthly = 'MONTHLY',
+}
+
+
 export interface Snapshot extends Taggable, BaseModelInterface {
   description: string;
   id: string;
   created: string;
   physicalsize: number;
   volumeid?: string;
+  volumename?: string;
   virtualmachineid?: string;
+  virtualmachinename?: string;
   name: string;
   tags: Array<Tag>;
   state: SnapshotStates,
-  revertable: boolean
+  revertable: boolean,
+  snapshottype: SnapshotType
 }
 
 export const getDateSnapshotCreated = (snapshot: Snapshot) => {
