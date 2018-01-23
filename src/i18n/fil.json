@@ -1030,49 +1030,49 @@
     "NAME": "Pangalan",
     "PUBLIC_KEY": "Publikong key",
     "AUTO_GENERATED": "auto generated",
-    "SAVE_THIS_KEY": "Please, save this private key as it will not be kept",
-    "REMOVE_THIS_KEY": "Are you sure you want to remove this key?",
-    "KEY_REMOVAL_FAILED": "Key removal failed",
-    "SSH_KEY_PAIR_NOT_FOUND": "SSH key pair not found",
+    "SAVE_THIS_KEY": "Mangyaring i-save ang pribadong key na ito sapagkat ito ay hindi itatago",
+    "REMOVE_THIS_KEY": "Sigurado ka bang gusto mong tangglan ang key na ito?",
+    "KEY_REMOVAL_FAILED": "Bigong natanggal ang key",
+    "SSH_KEY_PAIR_NOT_FOUND": "Hindi natagpuan ang pares ng SSH key",
     "FINGERPRINT": "Fingerprint",
     "FILTERS": {
-      "SELECT_ACCOUNTS": "Select accounts",
-      "GROUP_BY": "Group by",
-      "GROUP_BY_ACCOUNTS": "Accounts"
+      "SELECT_ACCOUNTS": "Pumili ng mga account",
+      "GROUP_BY": "Igrupo ayon sa",
+      "GROUP_BY_ACCOUNTS": "Mga account"
     }
   },
   "ACCOUNT_PAGE": {
     "CREATION": {
-      "CREATE_ACCOUNT": "New account",
+      "CREATE_ACCOUNT": "Bagong account",
       "USER_NAME": "Username",
       "EMAIL": "Email",
       "PASSWORD": "Password",
-      "FIRST_NAME": "First name",
-      "LAST_NAME": "Last name",
+      "FIRST_NAME": "Unang pangalan",
+      "LAST_NAME": "Apelyido",
       "DOMAIN": "Domain",
-      "ROLE": "Role",
+      "ROLE": "Tungkulin",
       "ACCOUNT": "Parent account",
       "NETWORK_DOMAIN": "Network domain"
     },
     "FILTERS": {
-      "SELECT_DOMAINS": "Select domains",
-      "SELECT_ROLES": "Select roles",
-      "SELECT_ROLE_TYPES": "Select role types",
-      "SELECT_STATES": "Select states",
-      "GROUP_BY": "Group by",
-      "GROUP_BY_DOMAINS": "Domains",
-      "GROUP_BY_ROLES": "Roles",
-      "GROUP_BY_ROLETYPES": "Role Types",
-      "GROUP_BY_STATES": "States"
+      "SELECT_DOMAINS": "Pumili ng mga domain",
+      "SELECT_ROLES": "Pumili ng mga tungkulin",
+      "SELECT_ROLE_TYPES": "Pumili ng mga uri ng tungkulin",
+      "SELECT_STATES": "Pumili ng mga estado",
+      "GROUP_BY": "Igrupo ayon sa",
+      "GROUP_BY_DOMAINS": "Mga domain",
+      "GROUP_BY_ROLES": "Mga tungkulin",
+      "GROUP_BY_ROLETYPES": "Mga uri ng tungkulin",
+      "GROUP_BY_STATES": "Mga estado"
     },
     "CARD": {
-      "ROLE": "Role",
-      "ROLE_TYPE": "Role type",
+      "ROLE": "Tungkulin",
+      "ROLE_TYPE": "Uri ng tungkulin",
       "DOMAIN": "Domain"
     },
     "SIDEBAR": {
-      "GENERAL": "General",
-      "USERS": "Users",
+      "GENERAL": "Pangkalahatan",
+      "USERS": "Mga gumagamit",
       "LIMITS": "Limits",
       "SETTINGS": "Settings",
       "STATISTIC": "Statistic",
@@ -1131,7 +1131,7 @@
       "TIMEZONE": "Timezone",
       "EMAIL": "Email",
       "API_KEY": "API key",
-      "SECRET_KEY": "Secret key"
+      "SECRET_KEY": "Sekretong key"
     }
   },
   "SETTINGS": {
