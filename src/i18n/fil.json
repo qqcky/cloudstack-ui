@@ -755,39 +755,39 @@
     "LIST": {
       "SYSTEM_SECURITY_GROUPS": "System",
       "CUSTOM_SECURITY_GROUPS": "Kustom",
-      "SHARED_SECURITY_GROUPS": "Shared"
+      "SHARED_SECURITY_GROUPS": "Ibinahagi"
     },
     "CARD": {
-      "DESCRIPTION": "Description",
-      "VM_NAME": "VM name"
+      "DESCRIPTION": "Paglalarawan",
+      "VM_NAME": "Pangalan ng VM"
     },
     "RULES": {
-      "VIEW_TITLE": "Rules for <b>{{ value }}</b>",
-      "EDIT_TITLE": "Edit rules for <b>{{ value }}</b>",
-      "TYPE": "Type",
+      "VIEW_TITLE": "Mga patakaran para sa <b>{{ value }}</b>",
+      "EDIT_TITLE": "I-edit ang mga patakaran para sa <b>{{ value }}</b>",
+      "TYPE": "Uri",
       "PROTOCOL": "Protocol",
       "CIDR": "CIDR",
-      "START_PORT": "Start port",
-      "END_PORT": "End port",
+      "START_PORT": "Simulang port",
+      "END_PORT": "Huling port",
       "INGRESS": "Ingress",
-      "INGRESS_DISPLAY": "Incoming",
+      "INGRESS_DISPLAY": "Papasok",
       "EGRESS": "Egress",
-      "EGRESS_DISPLAY": "Outgoing",
+      "EGRESS_DISPLAY": "Papalabas",
       "TCP": "TCP",
       "UDP": "UDP",
       "ICMP": "ICMP",
-      "ICMP_TYPE": "ICMP type",
+      "ICMP_TYPE": "Uri ng ICMP",
       "ICMP_CODE": "ICMP code",
-      "ICMP_ANY": "Any",
-      "ENTER_VALID_PORT": "Enter a valid port",
-      "ENTER_VALID_TYPE": "Enter a valid type",
-      "ENTER_VALID_CODE": "Enter a valid code",
-      "ENTER_VALID_CIDR": "Enter a valid CIDR",
-      "FAILED_TO_ADD_RULE": "Failed to add the rule",
-      "FAILED_TO_REMOVE_RULE": "Failed to remove the rule",
-      "SELECT_TYPE": "Select types",
-      "SELECT_PROTOCOL": "Select protocols",
-      "DEFAULT_RULE": "{{ type }} <b>{{ protocol }}</b> traffic to ip <b>{{ cidr }} to port {{ startPort }}</b>",
+      "ICMP_ANY": "Kahit ano",
+      "ENTER_VALID_PORT": "Magpasok ng balidong port",
+      "ENTER_VALID_TYPE": "Magpasok ng balidong uri",
+      "ENTER_VALID_CODE": "Magpasok ng balidong code",
+      "ENTER_VALID_CIDR": "Magpasok ng balidong CIDR",
+      "FAILED_TO_ADD_RULE": "Bigong naidagdag ang patakaran",
+      "FAILED_TO_REMOVE_RULE": "Bigong natanggal ang patakaran",
+      "SELECT_TYPE": "Pumili ng mga uri",
+      "SELECT_PROTOCOL": "Pumili ng mga protocol",
+      "DEFAULT_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko sa ip <b>{{ cidr }} sa port {{ startPort }}</b>",
       "DEFAULT_RULE_PORT_RANGE": "{{ type }}<b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> sa <b>hanay ng port {{ startPort }}-{{ endPort }}</b>",
       "DEFAULT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> ng uri ng ICMP <b>{{ icmpTypeText }} [{{ icmpType }}]</b> at ICMP code <b>{{ icmpCodeText }} [{{ icmpCode }}]</b>",
       "NO_TEXT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> ng uri ng ICMP <b>{{ icmpType }}</b> at ICMP code <b>{{ icmpCode }}</b>",
@@ -894,48 +894,48 @@
         }
       },
       "14": {
-        "description": "Timestamp reply",
+        "description": "Sagot ng timestamp",
         "codes": {
-          "0": "Timestamp reply"
+          "0": "Sagot ng timestamp"
         }
       },
       "15": {
-        "description": "Information request",
+        "description": "Hiling ng impormasyon",
         "codes": {
-          "0": "Information request"
+          "0": "Hiling ng impormasyon"
         }
       },
       "16": {
-        "description": "Information Reply",
+        "description": "Sagot ng impormasyon",
         "codes": {
-          "0": "Information Reply"
+          "0": "Sagot ng impormasyon"
         }
       },
       "17": {
-        "description": "Address Mask Request",
+        "description": "Hiling ng Address Mask",
         "codes": {
-          "0": "Address Mask Request"
+          "0": "Hiling ng Address Mask"
         }
       },
       "18": {
-        "description": "Address Mask Reply",
+        "description": "Sagot ng Address Mask",
         "codes": {
-          "0": "Address Mask Reply"
+          "0": "Sagot ng Address Mask"
         }
       },
       "30": {
         "description": "Traceroute",
         "codes": {
-          "0": "Outbound Packet successfully forwarded",
-          "1": "No route for Outbound Packet, the packet was discarded"
+          "0": "Matagumpay na naipasa ang outbound packet",
+          "1": "Walang route para sa Outbound Packet, ang packet ay iwinaksi"
         }
       },
       "31": {
-        "description": "Datagram Conversion Error",
+        "description": "Kamalian sa pagpapalit ng datagram",
         "codes": {
-          "0": "Unknown or unspecified error",
-          "1": "Don't convert option present",
-          "2": "Unknown mandatory option present",
+          "0": "Hindi kilala o hindi matukoy na kamalian",
+          "1": "Huwang palitan ang naroong opsyon",
+          "2": "Hindi kilala ang naroong sapilitang opsyon",
           "3": "Known unsupported option present",
           "4": "Unsupported transport protocol",
           "5": "Overall length exceeded",
@@ -1073,61 +1073,61 @@
     "SIDEBAR": {
       "GENERAL": "Pangkalahatan",
       "USERS": "Mga gumagamit",
-      "LIMITS": "Limits",
+      "LIMITS": "Mga Limitasyon",
       "SETTINGS": "Settings",
-      "STATISTIC": "Statistic",
-      "ARE_YOU_SURE_UPDATE_STATS": "Are you sure you want to update account statistic"
+      "STATISTIC": "Istatistika",
+      "ARE_YOU_SURE_UPDATE_STATS": "Sigurado ka bang gusto mong i-update ang mga istatistika ng account"
     },
     "DETAILS": {
-      "TITLE": "Details",
+      "TITLE": "Mga detalye",
       "ID": "ID",
-      "ROLE": "Role",
-      "ROLE_TYPE": "Role type",
+      "ROLE": "Tungkulin",
+      "ROLE_TYPE": "Uri ng tungkulin",
       "DOMAIN": "Domain",
       "VMS": "VMs",
       "IPS": "IPs",
-      "R_BYTES": "Bytes received",
-      "S_BYTES": "Bytes sent"
+      "R_BYTES": "Natanggap na byte",
+      "S_BYTES": "Naipadalang byte"
     },
     "CONFIGURATION": {
-      "VM_LIMIT": "VM limit",
-      "IP_LIMIT": "IP limit",
-      "VOLUME_LIMIT": "Volume limit",
-      "SNAPSHOT_LIMIT": "Snapshot limit",
-      "TEMPLATE_LIMIT": "Template limit",
-      "PROJECT_LIMIT": "Project limit",
-      "NETWORK_LIMIT": "Network limit",
-      "VPC_LIMIT": "VPC limit",
-      "CPU_LIMIT": "CPU limit",
-      "MEMORY_LIMIT": "Memory limit",
-      "PSTORAGE_LIMIT": "Primary storage limit",
-      "SSTORAGE_LIMIT": "Second storage limit",
-      "VM_COUNT": "VM count",
-      "IP_COUNT": "IP count",
-      "VOLUME_COUNT": "Volume count",
-      "SNAPSHOT_COUNT": "Snapshot count",
-      "TEMPLATE_COUNT": "Template count",
-      "PROJECT_COUNT": "Project count",
-      "NETWORK_COUNT": "Network count",
-      "VPC_COUNT": "VPC count",
-      "CPU_COUNT": "CPU count",
-      "MEMORY_COUNT": "Memory count",
-      "PSTORAGE_COUNT": "Primary storage count",
-      "SSTORAGE_COUNT": "Second storage count",
-      "EDIT": "Edit",
-      "NAME": "Name",
-      "VALUE": "Value"
+      "VM_LIMIT": "Limitasyon ng VM",
+      "IP_LIMIT": "Limitasyon ng IP",
+      "VOLUME_LIMIT": "Limitasyon ng volume",
+      "SNAPSHOT_LIMIT": "Limitasyon ng snapshot",
+      "TEMPLATE_LIMIT": "Limitasyon ng template",
+      "PROJECT_LIMIT": "Limitasyon ng proyekto",
+      "NETWORK_LIMIT": "Limitasyon ng network",
+      "VPC_LIMIT": "Limitasyon ng VPC",
+      "CPU_LIMIT": "Limitasyon ng CPU",
+      "MEMORY_LIMIT": "Limitasyon ng memory",
+      "PSTORAGE_LIMIT": "Limitasyon ng pangunahing paglalagyan",
+      "SSTORAGE_LIMIT": "Limitasyon ng pangalawang paglalagyan",
+      "VM_COUNT": "Bilang ng VM",
+      "IP_COUNT": "Bilang ng IP",
+      "VOLUME_COUNT": "Bilang ng volume",
+      "SNAPSHOT_COUNT": "Bilang ng snapshot",
+      "TEMPLATE_COUNT": "Bilang ng template",
+      "PROJECT_COUNT": "Bilang ng proyekto",
+      "NETWORK_COUNT": "Bilang ng network",
+      "VPC_COUNT": "Bilang ng VPC",
+      "CPU_COUNT": "Bilang ng CPU",
+      "MEMORY_COUNT": "Bilang ng memory",
+      "PSTORAGE_COUNT": "Bilang ng pangunahing paglalagyan",
+      "SSTORAGE_COUNT": "Bilang ng pangalawang paglalagyan",
+      "EDIT": "I-edit",
+      "NAME": "Pangalan",
+      "VALUE": "Halaga"
     },
     "USER": {
-      "CREATE_USER": "New user",
-      "EDIT_USER": "Edit user",
-      "CHANGE_PASSWORD": "Change password",
-      "CONFIRM_PASSWORD_ERROR": "Password does not match the confirm password",
+      "CREATE_USER": "Bagong user",
+      "EDIT_USER": "I-edit ang user",
+      "CHANGE_PASSWORD": "Palitan ang password",
+      "CONFIRM_PASSWORD_ERROR": "Ang password ay hindi tugma sa pagkumpirma ng password",
       "USERNAME": "Username",
       "PASSWORD": "Password",
-      "CONFIRM_PASSWORD": "Confirm password",
-      "FIRST_NAME": "First name",
-      "LAST_NAME": "Last name",
+      "CONFIRM_PASSWORD": "Kumpirmahin ang password",
+      "FIRST_NAME": "Unang pangalan",
+      "LAST_NAME": "Apelyido",
       "TIMEZONE": "Timezone",
       "EMAIL": "Email",
       "API_KEY": "API key",
@@ -1323,16 +1323,16 @@
       "TUESDAY": "Martes",
       "WEDNESDAY": "Miyerkules",
       "THURSDAY": "Huwebes",
-      "FRIDAY": "Friday",
-      "SATURDAY": "Saturday",
-      "SUNDAY": "Sunday",
-      "MONDAY_LOWER": "monday",
-      "TUESDAY_LOWER": "tuesday",
-      "WEDNESDAY_LOWER": "wednesday",
-      "THURSDAY_LOWER": "thursday",
-      "FRIDAY_LOWER": "friday",
-      "SATURDAY_LOWER": "saturday",
-      "SUNDAY_LOWER": "sunday"
+      "FRIDAY": "Biyernes",
+      "SATURDAY": "Sabado",
+      "SUNDAY": "Linggo",
+      "MONDAY_LOWER": "lunes",
+      "TUESDAY_LOWER": "martes",
+      "WEDNESDAY_LOWER": "miyerkules",
+      "THURSDAY_LOWER": "huwebes",
+      "FRIDAY_LOWER": "biyernes",
+      "SATURDAY_LOWER": "sabado",
+      "SUNDAY_LOWER": "linggo"
     }
   },
   "UNITS": {
@@ -1346,27 +1346,27 @@
     "MHZ": "MHz"
   },
   "VOLUME_ACTIONS": {
-    "TAKE_SNAPSHOT": "Take a snapshot",
-    "SNAPSHOT_SCHEDULE": "Set up snapshot schedule",
-    "RESIZE": "Resize the disk",
-    "ATTACH": "Attach",
-    "DETACH": "Detach"
+    "TAKE_SNAPSHOT": "Kumuha ng snapshot",
+    "SNAPSHOT_SCHEDULE": "I-setup ang iskedyul ng snapshot",
+    "RESIZE": "Palitan ang laki ng disk",
+    "ATTACH": "Ilakip",
+    "DETACH": "Tanggalin"
   },
   "ACCOUNT_ACTION": {
-    "DELETE": "Delete account",
-    "DISABLE": "Disable account",
-    "ENABLE": "Enable account",
-    "LOCK": "Lock account"
+    "DELETE": "Tanggalin ang account",
+    "DISABLE": "Hindi paganahin ang account",
+    "ENABLE": "Paganahin ang account",
+    "LOCK": "I-lock ang account"
   },
   "ACCOUNT_USER_ACTION": {
-    "DELETE": "Delete user",
-    "EDIT": "Edit user",
-    "REGENERATE_KEY": "Regenerate key",
-    "CHANGE_PASSWORD": "Change password"
+    "DELETE": "Tanggalin ang user",
+    "EDIT": "I-edit ang user",
+    "REGENERATE_KEY": "Buuing muli ang key",
+    "CHANGE_PASSWORD": "Palitan ang password"
   },
   "ACCOUNT_STATE": {
-    "DISABLED": "Disabled",
-    "ENABLED": "Enabled",
-    "LOCKED": "Locked"
+    "DISABLED": "Hindi pinagana",
+    "ENABLED": "Pinagana",
+    "LOCKED": "Naka-lock"
   }
 }
