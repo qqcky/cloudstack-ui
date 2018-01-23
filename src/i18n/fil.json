@@ -936,15 +936,15 @@
           "0": "Hindi kilala o hindi matukoy na kamalian",
           "1": "Huwang palitan ang naroong opsyon",
           "2": "Hindi kilala ang naroong sapilitang opsyon",
-          "3": "Known unsupported option present",
-          "4": "Unsupported transport protocol",
-          "5": "Overall length exceeded",
-          "6": "IP header length exceeded",
+          "3": "Kilalang hindi suportado ang naroong opsyon",
+          "4": "Hindi suportado ang transport protocol",
+          "5": "Lumampas ang kabuuang haba",
+          "6": "Lumampas ang haba ng IP header",
           "7": "Transport protocol > 255",
-          "8": "Port conversion out of range",
-          "9": "Transport header length exceeded",
-          "10": "32-bit rollover missing and ACK set",
-          "11": "Unknown mandatory transport option present"
+          "8": "Pagpapalitan ng port ay wala sa hanay",
+          "9": "Lumampas ang haba ng transport header",
+          "10": "Nawawala ang 32-bit rollover at ACK set",
+          "11": "Hindi kilala ang naroong saplitan na opsyon ng transport"
         }
       },
       "32": {
@@ -966,25 +966,25 @@
         }
       },
       "35": {
-        "description": "Mobile Registration Request",
+        "description": "Hiling ng Pagrerehistro sa Mobile",
         "codes": {
-          "0": "Mobile Registration Request"
+          "0": "Hiling ng Pagrerehistro sa Mobile"
         }
       },
       "36": {
-        "description": "Mobile Registration Reply",
+        "description": "Sagot sa Pagrerehistro sa Mobile",
         "codes": {
-          "0": "Mobile Registration Reply"
+          "0": "Sagot sa Pagrerehistro sa Mobile"
         }
       },
       "37": {
-        "description": "Domain Name Request",
+        "description": "Hiling ng Pangalan ng Domain",
         "codes": {
-          "0": "Domain Name Request"
+          "0": "Hiling ng Pangalan ng Domain"
         }
       },
       "38": {
-        "description": "Domain Name Reply",
+        "description": "Sagot ng Pangalan ng Domain",
         "codes": {
           "0": "Domain Name Reply"
         }
