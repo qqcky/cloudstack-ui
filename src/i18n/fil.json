@@ -855,25 +855,25 @@
         }
       },
       "8": {
-        "description": "Echo request",
+        "description": "Kahilingan ng echo",
         "codes": {
-          "0": "Echo request"
+          "0": "Kahilingan ng echo"
         }
       },
       "9": {
-        "description": "Router Advertisement",
+        "description": "Paanunsiyo ng Router",
         "codes": {
-          "0": "Router Advertisement"
+          "0": "Paanunsiyo ng Router"
         }
       },
       "10": {
-        "description": "Router Solicitation",
+        "description": "Pangangalap ng Router",
         "codes": {
-          "0": "Router discovery/selection/solicitation"
+          "0": "Pagtuklas/Pagpili/Pangangalap ng Router"
         }
       },
       "11": {
-        "description": "Time Exceeded",
+        "description": "Lumampas ang oras",
         "codes": {
           "0": "TTL expired in transit",
           "1": "Fragment reassembly time exceeded"
