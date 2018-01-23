@@ -655,10 +655,10 @@
       "TEMPLATE_GROUP": {
         "NAME": "Grupo",
         "NO_GROUP": "Walang grupo",
-        "CHANGE_TEMPLATE_GROUP": "Change template group",
-        "CHOOSE_EXISTING_GROUP": "Choose an existing group",
-        "CHOOSE_GROUP": "Choose a group",
-        "REMOVE_FROM_GROUP": "Remove from the group \"{{ value }}\""
+        "CHANGE_TEMPLATE_GROUP": "Baguhin ang grupo ng template",
+        "CHOOSE_EXISTING_GROUP": "Pumili ng umiiral na grupo",
+        "CHOOSE_GROUP": "Pumili ng grupo",
+        "REMOVE_FROM_GROUP": "Tanggalin mula sa grupo ng \"{{ value }}\""
       }
     },
     "TEMPLATE_DETAILS": {
@@ -791,56 +791,56 @@
       "DEFAULT_RULE_PORT_RANGE": "{{ type }}<b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> sa <b>hanay ng port {{ startPort }}-{{ endPort }}</b>",
       "DEFAULT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> ng uri ng ICMP <b>{{ icmpTypeText }} [{{ icmpType }}]</b> at ICMP code <b>{{ icmpCodeText }} [{{ icmpCode }}]</b>",
       "NO_TEXT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> ng uri ng ICMP <b>{{ icmpType }}</b> at ICMP code <b>{{ icmpCode }}</b>",
-      "NO_CODE_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> traffic to ip <b>{{ cidr }}</b> of ICMP type <b>{{ icmpTypeText }} [{{ icmpType }}]</b> and ICMP code <b>{{ icmpCode }}</b>",
-      "DEFAULT_RULE_NOMARKUP": "{{ type }} {{ protocol }} traffic to ip {{ cidr }} to port {{ startPort }}",
-      "DEFAULT_RULE_PORT_RANGE_NOMARKUP": "{{ type }} {{ protocol }} traffic to ip {{ cidr }} to port range {{ startPort }}-{{ endPort }}",
-      "DEFAULT_ICMP_RULE_NOMARKUP": "{{ type }} {{ protocol }} traffic to ip {{ cidr }} of ICMP type {{ icmpTypeText }} [{{ icmpType }}] and ICMP code {{ icmpCodeText }} [{{ icmpCode }}]",
-      "NO_TEXT_ICMP_RULE_NOMARKUP": "{{ type }} {{ protocol }} traffic to ip {{ cidr }} of ICMP type {{ icmpType }} and ICMP code {{ icmpCode }}",
-      "NO_CODE_ICMP_RULE_NOMARKUP": "{{ type }} {{ protocol }} traffic to ip {{ cidr }} of ICMP type {{ icmpTypeText }} [{{ icmpType }}] and ICMP code {{ icmpCode }}",
-      "NO_FIREWALL_RULES": "No firewall rules"
+      "NO_CODE_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko sa ip <b>{{ cidr }}</b> ng uri ng ICMP <b>{{ icmpTypeText }} [{{ icmpType }}]</b> at ICMP code <b>{{ icmpCode }}</b>",
+      "DEFAULT_RULE_NOMARKUP": "{{ type }} {{ protocol }} trapiko sa ip {{ cidr }} sa port {{ startPort }}",
+      "DEFAULT_RULE_PORT_RANGE_NOMARKUP": "{{ type }} {{ protocol }} trapiko sa ip {{ cidr }} sa hanay ng port {{ startPort }}-{{ endPort }}",
+      "DEFAULT_ICMP_RULE_NOMARKUP": "{{ type }} {{ protocol }} trapiko sa ip {{ cidr }} ng uri ng ICMP {{ icmpTypeText }} [{{ icmpType }}] at ICMP code {{ icmpCodeText }} [{{ icmpCode }}]",
+      "NO_TEXT_ICMP_RULE_NOMARKUP": "{{ type }} {{ protocol }} trapiko sa ip {{ cidr }} ng uri ng ICMP {{ icmpType }} at ICMP code {{ icmpCode }}",
+      "NO_CODE_ICMP_RULE_NOMARKUP": "{{ type }} {{ protocol }} trapiko sa ip {{ cidr }} ng uri ng ICMP {{ icmpTypeText }} [{{ icmpType }}] at ICMP code {{ icmpCode }}",
+      "NO_FIREWALL_RULES": "Walang patakaran ng firewall"
     },
     "ICMP_TYPES": {
       "-1": {
-        "description": "Any",
+        "description": "Kahit ano",
         "codes": {
-          "-1": "Any"
+          "-1": "Kahit ano"
         }
       },
       "0": {
-        "description": "Echo reply",
+        "description": "Sagot ng echo",
         "codes": {
-          "0": "Echo reply"
+          "0": "Sagot ng echo"
         }
       },
       "3": {
-        "description": "Destination Unreachable",
+        "description": "Hindi maabot ang destinasyon",
         "codes": {
-          "0": "Destination network unreachable",
-          "1": "Destination host unreachable",
-          "2": "Destination protocol unreachable",
-          "3": "Destination port unreachable",
-          "4": "Fragmentation required, and DF flag set",
-          "5": "Source route failed",
-          "6": "Destination network unknown",
-          "7": "Destination host unknown",
-          "8": "Source host isolated",
-          "9": "Network administratively prohibited",
-          "10": "Host administratively prohibited",
-          "11": "Network unreachable for ToS",
-          "12": "Host unreachable for ToS",
-          "13": "Communication administratively prohibited",
-          "14": "Host Precedence Violation",
-          "15": "Precedence cutoff in effect"
+          "0": "Hindi maabot ang network ng destinasyon",
+          "1": "Hindi maabot ang host ng destinasyon",
+          "2": "Hindi maabot ang protocol ng destinasyon",
+          "3": "Hindi maabot ang port ng destinasyon",
+          "4": "Kinakailangan ang fragmentation, at hanay ng DF flag",
+          "5": "Bigong mairuta ang pinagmulan",
+          "6": "Hindi kilala ang network ng destinasyon",
+          "7": "Hindi kilala ang host ng destinasyon",
+          "8": "Nakahiwalay ang pinagmulang host",
+          "9": "Administratibong pinagbabawal ang network",
+          "10": "Administratibong pinagbabawal ang host",
+          "11": "Hindi maabot ang network para sa ToS",
+          "12": "Hindi maabot ang host para sa ToS",
+          "13": "Administratibong pinagbabawal ang komunikasyon",
+          "14": "Paglabag sa pangunguna ng host",
+          "15": "Pagsasabisa ng cutoff ngpagkauna"
         }
       },
       "4": {
-        "description": "Source Quench",
+        "description": "Pinagmula ng Quench",
         "codes": {
-          "0": "Source quench"
+          "0": "Pinagmula ng quench"
         }
       },
       "5": {
-        "description": "Redirect Message",
+        "description": "Mensahe ng pag-redirect",
         "codes": {
           "0": "Redirect Datagram for the Network",
           "1": "Redirect Datagram for the Host",
