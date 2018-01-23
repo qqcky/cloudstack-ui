@@ -1142,56 +1142,56 @@
       "REPEAT_PASSWORD": "Ulitin ang password",
       "PASSWORD_CHANGED_SUCCESSFULLY": "Matagumpay na napalitan ang password",
       "INACTIVITY_TIMEOUT": "Timeout ng sesyon (sa&nbsp;minuto)",
-      "INACTIVITY_LIMITS": "Between 0 and 300"
+      "INACTIVITY_LIMITS": "Pagitan ng 0 at 300"
     },
     "VM": {
-      "SAVE_PASSWORD_FOR_ALL_VMS": "Save VM passwords by default"
+      "SAVE_PASSWORD_FOR_ALL_VMS": "I-save ang mga password ng VM bilang default"
     },
     "API_CONFIGURATION": {
-      "TITLE": "API configuration",
+      "TITLE": "Kumpigurasyon ng API",
       "API_KEY": "API Key",
-      "API_SECRET_KEY": "Secret key",
-      "API_URL": "Connection URL",
-      "API_DOC_LINK": "Documentation",
-      "REGENERATE_KEYS": "Regenerate API keys",
-      "ASK_GENERATE_KEYS": "Are you sure you want to generate API keys?",
-      "GENERATE": "Generate"
+      "API_SECRET_KEY": "Sekretong Key",
+      "API_URL": "URL ng koneksyon",
+      "API_DOC_LINK": "Dokumentasyon",
+      "REGENERATE_KEYS": "Muling buuin ang API keys",
+      "ASK_GENERATE_KEYS": "Sigurado ka bang gusto mong buuin ang API keys?",
+      "GENERATE": "Buuin"
     },
     "LOOK_AND_FEEL": {
-      "TITLE": "Look and Feel",
+      "TITLE": "Hitsura",
       "LANGUAGE": "Interface Language",
-      "FIRST_DAY_OF_WEEK": "First day of the week",
-      "TIME_FORMAT": "Time format",
-      "hour12": "12-Hours Time",
-      "hour24": "24-Hours Time",
+      "FIRST_DAY_OF_WEEK": "Unang araw ng linggo",
+      "TIME_FORMAT": "Format ng oras",
+      "hour12": "12-Oras na Oras",
+      "hour24": "24-Oras na Oras",
       "AUTO": "Auto",
-      "THEME": "Theme Color"
+      "THEME": "Kulay ng tema"
     }
   },
   "CLIPBOARD": {
-    "COPY": "Copy",
-    "COPY_SUCCESS": "Copied successfully",
-    "COPY_FAIL": "Failed to copy to clipboard"
+    "COPY": "Kopya",
+    "COPY_SUCCESS": "Matagumpay na nakopya",
+    "COPY_FAIL": "Bigong nakopya sa clipboard"
   },
   "INLINE_EDIT": {
-    "CLICK_TO_EDIT": "Click to edit",
-    "ENTER_TEXT": "Enter text",
-    "SELECT_AN_OPTION": "Select an option"
+    "CLICK_TO_EDIT": "I-click para i-edit",
+    "ENTER_TEXT": "Magpasok ng text",
+    "SELECT_AN_OPTION": "Pumili ng opsyon"
   },
-  "VM_NOT_FOUND": "Virtual machine not found",
-  "VOLUME_NOT_FOUND": "Volume not found",
-  "TEMPLATE_NOT_FOUND": "Template not found",
-  "ACCOUNT_NOT_FOUND": "Account not found",
+  "VM_NOT_FOUND": "Hindi natagpuan ang virtual machine",
+  "VOLUME_NOT_FOUND": "Hindi natagpuan ang volume",
+  "TEMPLATE_NOT_FOUND": "Hindi natagpuan ang template",
+  "ACCOUNT_NOT_FOUND": "Hindi natagpuan ang account",
   "PULSE": {
-    "PULSE": "Pulse",
+    "PULSE": "Pulso",
     "CPU_RAM": "CPU / RAM",
     "NETWORK": "Network",
     "DISK": "Disk",
-    "RANGE": "Range",
-    "AGGREGATION": "Aggregation",
+    "RANGE": "Hanay",
+    "AGGREGATION": "Pagsama-sama",
     "SHIFT": "Shift",
-    "NO_DATA": "No data",
-    "SELECT_DATA": "Select data",
+    "NO_DATA": "Walang data",
+    "SELECT_DATA": "Pumili ng data",
     "ERROR": "An error occurred, please try again",
     "LABELS": {
       "CPU": "CPU",
