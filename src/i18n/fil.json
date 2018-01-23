@@ -590,71 +590,71 @@
       "NAME": "Pangalan",
       "ZONE": "Zone",
       "DISK_OFFERING": "Handog ng disk",
-      "SIZE": "Size"
+      "SIZE": "Laki"
     },
     "SIDEBAR": {
       "VOLUME": "Volume",
-      "SNAPSHOTS": "Snapshots"
+      "SNAPSHOTS": "Mga snapshot"
     },
     "DETAILS": {
-      "GENERAL_INFORMATION": "General information",
-      "SIZE": "Size",
-      "CREATED": "Created",
-      "STORAGE_TYPE": "Storage type",
-      "DISK_OFFERING": "Disk offering",
-      "DISK_OFFERING_NAME": "Name",
-      "DESCRIPTION": "Description",
+      "GENERAL_INFORMATION": "Pangkalahatang Impormasyon",
+      "SIZE": "Laki",
+      "CREATED": "Nalikha",
+      "STORAGE_TYPE": "Uri ng paglalagyan",
+      "DISK_OFFERING": "Handog ng disk",
+      "DISK_OFFERING_NAME": "Pangalan",
+      "DESCRIPTION": "Paglalarawan",
       "MIN_IOPS": "Min IO/s",
       "MAX_IOPS": "Max IO/s",
-      "READ_RATE_MB": "Read rate",
-      "WRITE_RATE_MB": "Write rate",
-      "READ_RATE_IOPS": "Read rate (IO/s)",
-      "WRITE_RATE_IOPS": "Write rate (IO/s)"
+      "READ_RATE_MB": "Tulin ng pagbasa",
+      "WRITE_RATE_MB": "Tulin ng pagsulat",
+      "READ_RATE_IOPS": "Tulin ng pagbasa (IO/s)",
+      "WRITE_RATE_IOPS": "Tulin ng pagsulat (IO/s)"
     },
     "SNAPSHOTS": {
-      "DESCRIPTION": "Description",
-      "DATE": "Date",
-      "VOLUME_NOT_READY": "Can't take snapshot. Volume is not ready"
+      "DESCRIPTION": "Paglalarawan",
+      "DATE": "Petsa",
+      "VOLUME_NOT_READY": "Hindi makakuha ng snapshot. Ang volume ay hindi pa handa"
     },
     "ATTACHMENT": {
-      "CHOOSE_VIRTUAL_MACHINE": "Choose a virtual machine",
-      "NO_VMS": "No virtual machines",
-      "NO_VMS_IN_ZONE": "No virtual machines in this volume's zone",
-      "ATTACH": "Attach"
+      "CHOOSE_VIRTUAL_MACHINE": "Pumili ng virtual machine",
+      "NO_VMS": "Walang virtual machine",
+      "NO_VMS_IN_ZONE": "Walang virtual machine sa zone ng volume na ito",
+      "ATTACH": "Ilakip"
     }
   },
   "TEMPLATE_PAGE": {
     "DISPLAY_MODES": {
-      "TEMPLATES": "Templates",
+      "TEMPLATES": "Mga template",
       "ISO": "ISO"
     },
     "FILTERS": {
-      "SELECT_ACCOUNTS": "Select accounts",
-      "SELECT_OS_FAMILIES": "Select OS families",
-      "SELECT_TYPES": "Select types",
-      "SELECT_ZONES": "Select zones",
-      "SELECT_GROUPS": "Select groups",
-      "GROUP_BY": "Group by",
-      "GROUP_BY_ZONES": "Zones",
-      "GROUP_BY_ACCOUNTS": "Accounts",
-      "GROUP_BY_GROUPS": "Groups",
-      "NO_ZONE": "No zone",
-      "FEATURED": "Featured",
-      "SELF": "My",
-      "SELFEXECUTABLE": "My",
-      "ALL": "All",
-      "GENERAL": "General"
+      "SELECT_ACCOUNTS": "Pumili ng mga account",
+      "SELECT_OS_FAMILIES": "Pumili ng mga pamilya ng OS",
+      "SELECT_TYPES": "Pumili ng mga uri",
+      "SELECT_ZONES": "Pumili ng mga zone",
+      "SELECT_GROUPS": "Pumili ng mga grupo",
+      "GROUP_BY": "Igrupo ayon sa",
+      "GROUP_BY_ZONES": "Mga zone",
+      "GROUP_BY_ACCOUNTS": "Mga account",
+      "GROUP_BY_GROUPS": "Mga grupo",
+      "NO_ZONE": "Walang zone",
+      "FEATURED": "Itinampok",
+      "SELF": "Akin",
+      "SELFEXECUTABLE": "Akin",
+      "ALL": "Lahat",
+      "GENERAL": "Pangkalahatan"
     },
     "CARD": {
       "OS": "OS"
     },
     "SIDEBAR": {
       "TEMPLATE": "Template",
-      "ZONES": "Zones",
-      "TAGS": "Tags",
+      "ZONES": "Mga zone",
+      "TAGS": "Mga tag",
       "TEMPLATE_GROUP": {
-        "NAME": "Group",
-        "NO_GROUP": "No group",
+        "NAME": "Grupo",
+        "NO_GROUP": "Walang grupo",
         "CHANGE_TEMPLATE_GROUP": "Change template group",
         "CHOOSE_EXISTING_GROUP": "Choose an existing group",
         "CHOOSE_GROUP": "Choose a group",
@@ -711,23 +711,23 @@
       "VOLUME": "Volume",
       "VM": "Virtual Machine",
       "VOLUME_DELETED": "Tinanggal",
-      "VM_DELETED": "Deleted",
-      "CREATED": "Created"
+      "VM_DELETED": "Tinanggal",
+      "CREATED": "Nalikha"
     },
     "FILTERS": {
       "VOLUME": "Volume",
       "VM": "Virtual Machines"
     },
     "ACTIONS": {
-      "CREATE_TEMPLATE": "Create template",
-      "CREATE_VOLUME": "Create volume",
-      "REVERT_TO_SNAPSHOT": "Revert volume to snapshot",
-      "DELETE_SNAPSHOT": "Delete"
+      "CREATE_TEMPLATE": "Lumikha ng template",
+      "CREATE_VOLUME": "Lumikha ng volume",
+      "REVERT_TO_SNAPSHOT": "Ibalik ang volume sa snapshot",
+      "DELETE_SNAPSHOT": "Burahin"
     }
   },
   "SECURITY_GROUP_PAGE": {
     "DETAILS": {
-      "TITLE": "Details",
+      "TITLE": "Mga detalye",
       "ID": "ID",
       "NAME": "Name",
       "DESCRIPTION": "Description",
@@ -788,9 +788,9 @@
       "SELECT_TYPE": "Select types",
       "SELECT_PROTOCOL": "Select protocols",
       "DEFAULT_RULE": "{{ type }} <b>{{ protocol }}</b> traffic to ip <b>{{ cidr }} to port {{ startPort }}</b>",
-      "DEFAULT_RULE_PORT_RANGE": "{{ type }} <b>{{ protocol }}</b> traffic to ip <b>{{ cidr }}</b> to <b>port range {{ startPort }}-{{ endPort }}</b>",
-      "DEFAULT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> traffic to ip <b>{{ cidr }}</b> of ICMP type <b>{{ icmpTypeText }} [{{ icmpType }}]</b> and ICMP code <b>{{ icmpCodeText }} [{{ icmpCode }}]</b>",
-      "NO_TEXT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> traffic to ip <b>{{ cidr }}</b> of ICMP type <b>{{ icmpType }}</b> and ICMP code <b>{{ icmpCode }}</b>",
+      "DEFAULT_RULE_PORT_RANGE": "{{ type }}<b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> sa <b>hanay ng port {{ startPort }}-{{ endPort }}</b>",
+      "DEFAULT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> ng uri ng ICMP <b>{{ icmpTypeText }} [{{ icmpType }}]</b> at ICMP code <b>{{ icmpCodeText }} [{{ icmpCode }}]</b>",
+      "NO_TEXT_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> trapiko ng ip <b>{{ cidr }}</b> ng uri ng ICMP <b>{{ icmpType }}</b> at ICMP code <b>{{ icmpCode }}</b>",
       "NO_CODE_ICMP_RULE": "{{ type }} <b>{{ protocol }}</b> traffic to ip <b>{{ cidr }}</b> of ICMP type <b>{{ icmpTypeText }} [{{ icmpType }}]</b> and ICMP code <b>{{ icmpCode }}</b>",
       "DEFAULT_RULE_NOMARKUP": "{{ type }} {{ protocol }} traffic to ip {{ cidr }} to port {{ startPort }}",
       "DEFAULT_RULE_PORT_RANGE_NOMARKUP": "{{ type }} {{ protocol }} traffic to ip {{ cidr }} to port range {{ startPort }}-{{ endPort }}",
