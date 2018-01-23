@@ -729,32 +729,32 @@
     "DETAILS": {
       "TITLE": "Mga detalye",
       "ID": "ID",
-      "NAME": "Name",
-      "DESCRIPTION": "Description",
-      "TYPE": "Type",
-      "VM_NAME": "VM name",
-      "VM_LIST_SHARED": "VMs using the group",
-      "VM_LIST_PRIVATE": "VM using the group",
-      "EMPTY_VM_LIST": "No virtual machines",
-      "EMPTY_VM_NAME": "Not available"
+      "NAME": "Pangalan",
+      "DESCRIPTION": "Paglalarawan",
+      "TYPE": "Uri",
+      "VM_NAME": "Pangalan ng VM",
+      "VM_LIST_SHARED": "Mga VM na gumagamit ng grupo",
+      "VM_LIST_PRIVATE": "VM na gumagamit ng grupo",
+      "EMPTY_VM_LIST": "Walang virtual machine",
+      "EMPTY_VM_NAME": "Hindi magagamit"
     },
     "ACTION": {
-      "RULES": "Rules",
-      "CONVERT": "Convert to shared"
+      "RULES": "Mga patakaran",
+      "CONVERT": "Palitan sa ibinahagi"
     },
     "FILTERS": {
-      "SELECT_ACCOUNTS": "Select accounts",
-      "ORPHAN": "Orphan",
+      "SELECT_ACCOUNTS": "Pumili ng mga account",
+      "ORPHAN": "Ulila",
       "TEMPLATES": "Firewall Templates",
-      "SHARED": "Shared Security Groups",
-      "PRIVATE": "Private Security Groups",
-      "GROUP_BY": "Group by",
+      "SHARED": "Mga grupo ng ibinahaging seguridad",
+      "PRIVATE": "Mga grupo ng pribadong seguridad",
+      "GROUP_BY": "Igrupo ayon sa",
       "PROTOCOLS": "Protocols",
-      "TYPES": "Types"
+      "TYPES": "Mga uri"
     },
     "LIST": {
       "SYSTEM_SECURITY_GROUPS": "System",
-      "CUSTOM_SECURITY_GROUPS": "Custom",
+      "CUSTOM_SECURITY_GROUPS": "Kustom",
       "SHARED_SECURITY_GROUPS": "Shared"
     },
     "CARD": {
@@ -1192,11 +1192,11 @@
     "SHIFT": "Shift",
     "NO_DATA": "Walang data",
     "SELECT_DATA": "Pumili ng data",
-    "ERROR": "An error occurred, please try again",
+    "ERROR": "May kamaliang naganap, mangyaring subukang muli",
     "LABELS": {
       "CPU": "CPU",
       "RAM": "RAM",
-      "NETWORK_READ": "Network read",
+      "NETWORK_READ": "Pagbasa ng network",
       "NETWORK_WRITE": "Network write",
       "NETWORK_READ_PACKETS": "Network read packets",
       "NETWORK_WRITE_PACKETS": "Network write packets",
@@ -1256,73 +1256,73 @@
     "HOURLY": "Hourly",
     "DAILY": "Daily",
     "WEEKLY": "Weekly",
-    "MONTHLY": "Monthly",
-    "BETWEEN": "From {{ lowerLimit }} to {{ upperLimit }}"
+    "MONTHLY": "Buwanan",
+    "BETWEEN": "Mula {{ lowerLimit }} hanggang {{ upperLimit }}"
   },
   "SUGGESTION_DIALOG": {
-    "WOULD_YOU_LIKE_TO_CREATE_VM": "Would you like to create a virtual machine?",
-    "WOULD_YOU_LIKE_TO_CREATE_VOLUME": "Would you like to create a new volume?",
-    "NO_DONT_ASK": "No, don't ask"
+    "WOULD_YOU_LIKE_TO_CREATE_VM": "Gusto mo bang lumikha ng virtual machine?",
+    "WOULD_YOU_LIKE_TO_CREATE_VOLUME": "Gusto mo bang lumikha ng bagong volume?",
+    "NO_DONT_ASK": "Hindi, huwag tanungin"
   },
   "TAGS": {
-    "CREATE_NEW_TAG": "Create a new tag",
-    "SHOW_SYSTEM_TAGS": "Show system tags",
+    "CREATE_NEW_TAG": "Lumikha ng bagong tag",
+    "SHOW_SYSTEM_TAGS": "Ipakita ang system tags",
     "TAG_KEY": "Key",
-    "TAG_VALUE": "Value",
-    "TAG_ALREADY_EXISTS": "Tag already exists",
-    "EDIT_TAG": "Edit tag"
+    "TAG_VALUE": "Halaga",
+    "TAG_ALREADY_EXISTS": "Umiiral na ang tag",
+    "EDIT_TAG": "I-edit ang tag"
   },
   "DISK_OFFERING_STORAGE_TYPE": {
-    "SHARED": "Shared",
-    "LOCAL": "Local"
+    "SHARED": "Nakabahagi",
+    "LOCAL": "Lokal"
   },
   "VOLUME_STATE": {
-    "ALLOCATED": "Allocated",
-    "READY": "Ready"
+    "ALLOCATED": "Nakalaan",
+    "READY": "Handa"
   },
   "SNAPSHOT_STATE": {
-    "BACKEDUP": "Backed up",
-    "CREATING": "Creating",
-    "BACKINGUP": "Backing up",
-    "ALLOCATED": "Allocated",
-    "ERROR": "Error"
+    "BACKEDUP": "Naka-backup",
+    "CREATING": "Naglilikha",
+    "BACKINGUP": "Nagba-backup",
+    "ALLOCATED": "Nakalaan",
+    "ERROR": "Kamalian"
   },
   "VM_STATE": {
-    "RUNNING": "Running",
-    "STOPPED": "Stopped",
-    "STARTING": "Starting",
-    "STOPPING": "Stopping",
-    "REBOOTING": "Rebooting",
-    "RESTORING": "Restoring",
-    "DESTROYING": "Destroying",
-    "DESTROYED": "Destroyed",
-    "EXPUNGING": "Expunging",
-    "DEPLOYING": "Deploying",
-    "ERROR": "Error",
-    "START_IN_PROGRESS": "Starting",
-    "STOP_IN_PROGRESS": "Stopping",
-    "REBOOT_IN_PROGRESS": "Rebooting",
-    "RESTORE_IN_PROGRESS": "Reinstalling",
-    "DESTROY_IN_PROGRESS": "Destroying",
-    "DEPLOY_IN_PROGRESS": "Deploying",
-    "RESET_PASSWORD_IN_PROGRESS": "Resetting password",
-    "EXPUNGE_IN_PROGRESS": "Expunging",
-    "RECOVER_IN_PROGRESS": "Recovering"
+    "RUNNING": "Nagtatakbo",
+    "STOPPED": "Tumigil",
+    "STARTING": "Nagsisimula",
+    "STOPPING": "Naghihinto",
+    "REBOOTING": "Nagri-reboot",
+    "RESTORING": "Nagsasaulli",
+    "DESTROYING": "Nagsisira",
+    "DESTROYED": "Nasira",
+    "EXPUNGING": "Nagbubura",
+    "DEPLOYING": "Nagdi-deploy",
+    "ERROR": "Kamalian",
+    "START_IN_PROGRESS": "Nagsisimula",
+    "STOP_IN_PROGRESS": "Naghihinto",
+    "REBOOT_IN_PROGRESS": "Nagri-reboot",
+    "RESTORE_IN_PROGRESS": "Muling nag-i-install",
+    "DESTROY_IN_PROGRESS": "Nagsisira",
+    "DEPLOY_IN_PROGRESS": "Nagdi-deploy",
+    "RESET_PASSWORD_IN_PROGRESS": "Nagri-reset ng password",
+    "EXPUNGE_IN_PROGRESS": "Nagbubura",
+    "RECOVER_IN_PROGRESS": "Nagbabawi"
   },
   "VOLUME_TYPE": {
     "ROOT": "System Volumes",
-    "DATADISK": "Additional Volumes"
+    "DATADISK": "Karagdagang volume"
   },
   "DATE_TIME": {
     "AM": "AM",
     "PM": "PM",
-    "DAY_OF_WEEK": "Day of week",
-    "DAY_OF_MONTH": "Day of month",
+    "DAY_OF_WEEK": "Araw ng linggo",
+    "DAY_OF_MONTH": "Araw ng buwan",
     "DAYS_OF_WEEK": {
-      "MONDAY": "Monday",
-      "TUESDAY": "Tuesday",
-      "WEDNESDAY": "Wednesday",
-      "THURSDAY": "Thursday",
+      "MONDAY": "Lunes",
+      "TUESDAY": "Martes",
+      "WEDNESDAY": "Miyerkules",
+      "THURSDAY": "Huwebes",
       "FRIDAY": "Friday",
       "SATURDAY": "Saturday",
       "SUNDAY": "Sunday",
