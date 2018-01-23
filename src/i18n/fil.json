@@ -842,16 +842,16 @@
       "5": {
         "description": "Mensahe ng pag-redirect",
         "codes": {
-          "0": "Redirect Datagram for the Network",
-          "1": "Redirect Datagram for the Host",
-          "2": "Redirect Datagram for the ToS & network",
-          "3": "Redirect Datagram for the ToS & host"
+          "0": "Redirect Datagram para sa Network",
+          "1": "Redirect Datagram para sa Host",
+          "2": "Redirect Datagram para sa ToS at network",
+          "3": "Redirect Datagram para sa ToS at host"
         }
       },
       "6": {
-        "description": "Alternate Host Address",
+        "description": "Kahaliling Host Address",
         "codes": {
-          "0": "Alternate Address for Host"
+          "0": "Kahaliling Address para sa Host"
         }
       },
       "8": {
