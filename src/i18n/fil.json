@@ -875,16 +875,16 @@
       "11": {
         "description": "Lumampas ang oras",
         "codes": {
-          "0": "TTL expired in transit",
-          "1": "Fragment reassembly time exceeded"
+          "0": "Nag-expire ang TTL sa paghatid",
+          "1": "Lumampas ang oras sa pagtanggal ng fragment"
         }
       },
       "12": {
-        "description": "Parameter Problem: Bad IP header",
+        "description": "Problema sa parameter: Maling IP header",
         "codes": {
-          "0": "Pointer indicates the error",
-          "1": "Missing a required option",
-          "2": "Bad length"
+          "0": "Ang pointer ay nagpapahiwating ng kamalian",
+          "1": "Nawawala ang isang kinakailangan opsyon",
+          "2": "Maling haba"
         }
       },
       "13": {
