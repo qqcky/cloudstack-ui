@@ -1136,12 +1136,12 @@
   },
   "SETTINGS": {
     "SECURITY": {
-      "TITLE": "Security",
-      "CHANGE_PASSWORD": "Change password",
-      "NEW_PASSWORD": "New password",
-      "REPEAT_PASSWORD": "Repeat password",
-      "PASSWORD_CHANGED_SUCCESSFULLY": "Password has been changed successfully",
-      "INACTIVITY_TIMEOUT": "Session timeout (in&nbsp;minutes)",
+      "TITLE": "Seguridad",
+      "CHANGE_PASSWORD": "Palitan ang password",
+      "NEW_PASSWORD": "Bagong password",
+      "REPEAT_PASSWORD": "Ulitin ang password",
+      "PASSWORD_CHANGED_SUCCESSFULLY": "Matagumpay na napalitan ang password",
+      "INACTIVITY_TIMEOUT": "Timeout ng sesyon (sa&nbsp;minuto)",
       "INACTIVITY_LIMITS": "Between 0 and 300"
     },
     "VM": {
