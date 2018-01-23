@@ -1003,32 +1003,32 @@
           "2": "Decompression Failed",
           "3": "Decryption Failed",
           "4": "Need Authentication",
-          "5": "Need Authorization"
+          "5": "Kailangan ng pagpapatunay"
         }
       }
     },
     "TEMPLATE_CREATION": {
-      "CREATE_NEW_TEMPLATE": "Create new template",
-      "CREATE_NEW_SHARED_GROUP": "Create new shared group",
-      "NAME": "Name",
-      "DESCRIPTION": "Description",
-      "BASIC_RULES": "Basic rules"
+      "CREATE_NEW_TEMPLATE": "Lumikha ng bagong template",
+      "CREATE_NEW_SHARED_GROUP": "Lumikha ng bagong nakabahaging grupo",
+      "NAME": "Pangalan",
+      "DESCRIPTION": "Paglalarawan",
+      "BASIC_RULES": "Mga pangunahing patakaran"
     }
   },
   "EVENT_PAGE": {
-    "SELECT_DATE": "Select a date",
-    "SELECT_LEVELS": "Select levels",
-    "SELECT_TYPES": "Select types",
-    "NO_EVENTS": "No events for the selected date",
-    "DESCRIPTION": "Description",
-    "LEVEL": "Level",
-    "TYPE": "Type",
-    "TIME": "Time"
+    "SELECT_DATE": "Pumili ng petsa",
+    "SELECT_LEVELS": "Pumili ng mga antas",
+    "SELECT_TYPES": "Pumili ng mga uri",
+    "NO_EVENTS": "Walang mga kaganapan sa napiling petsa",
+    "DESCRIPTION": "Paglalarawan",
+    "LEVEL": "Antas",
+    "TYPE": "Uri",
+    "TIME": "Oras"
   },
   "SSH_KEYS": {
-    "CREATE_SSH_KEY": "Create SSH key",
-    "NAME": "Name",
-    "PUBLIC_KEY": "Public key",
+    "CREATE_SSH_KEY": "Lumikha ng SSH key",
+    "NAME": "Pangalan",
+    "PUBLIC_KEY": "Publikong key",
     "AUTO_GENERATED": "auto generated",
     "SAVE_THIS_KEY": "Please, save this private key as it will not be kept",
     "REMOVE_THIS_KEY": "Are you sure you want to remove this key?",
