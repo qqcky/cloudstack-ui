@@ -986,23 +986,23 @@
       "38": {
         "description": "Sagot ng Pangalan ng Domain",
         "codes": {
-          "0": "Domain Name Reply"
+          "0": "Sagot ng Pangalan ng Domain"
         }
       },
       "39": {
-        "description": "SKIP",
+        "description": "LAKTAWAN",
         "codes": {
-          "0": "SKIP"
+          "0": "LAKTAWAN"
         }
       },
       "40": {
         "description": "Photuris",
         "codes": {
-          "0": "Bad SPI",
-          "1": "Authentication Failed",
-          "2": "Decompression Failed",
-          "3": "Decryption Failed",
-          "4": "Need Authentication",
+          "0": "Masamang SPI",
+          "1": "Bigo ang pagpapatunay",
+          "2": "Bigo ang pag-decompress",
+          "3": "Bigo ang pag-decrypt",
+          "4": "Kailangan ng pagpapatunay",
           "5": "Kailangan ng pagpapatunay"
         }
       }
@@ -1197,65 +1197,65 @@
       "CPU": "CPU",
       "RAM": "RAM",
       "NETWORK_READ": "Pagbasa ng network",
-      "NETWORK_WRITE": "Network write",
-      "NETWORK_READ_PACKETS": "Network read packets",
-      "NETWORK_WRITE_PACKETS": "Network write packets",
-      "NETWORK_READ_DROPS": "Network read drops",
-      "NETWORK_WRITE_DROPS": "Network write drops",
-      "NETWORK_READ_ERRORS": "Network read errors",
-      "NETWORK_WRITE_ERRORS": "Network write errors",
-      "DISK_READ": "Disk read",
-      "DISK_WRITE": "Disk write",
-      "DISK_READ_IOPS": "Disk read (IOPS)",
-      "DISK_WRITE_IOPS": "Disk write (IOPS)",
-      "DISK_IO_ERRORS": "Disk IO errors"
+      "NETWORK_WRITE": "Pagsulat ng network",
+      "NETWORK_READ_PACKETS": "Packets ng pagbasa ng network",
+      "NETWORK_WRITE_PACKETS": "Packets ng pagsulat ng network",
+      "NETWORK_READ_DROPS": "Patak ng pagbasa ng network",
+      "NETWORK_WRITE_DROPS": "Patak ng pagsulat ng network",
+      "NETWORK_READ_ERRORS": "Mga kamalian sa pagbasa ng network",
+      "NETWORK_WRITE_ERRORS": "Mga kamalian sa pagsulat ng network",
+      "DISK_READ": "Pagbasa ng disk",
+      "DISK_WRITE": "Pagsulat ng disk",
+      "DISK_READ_IOPS": "Pagbasa ng disk (IOPS)",
+      "DISK_WRITE_IOPS": "Pagsulat ng disk (IOPS)",
+      "DISK_IO_ERRORS": "Mga kamalian sa Disk IO"
     }
   },
   "SECURITY_GROUP_SELECTOR": {
-    "BASED_ON_VALUE": "Based on {{ value }}",
-    "BUILD_NEW_GROUP": "Build a new security group",
-    "SELECT_EXISTING_GROUP": "Select an existing group",
-    "CREATE": "Create new",
-    "SELECT_SHARED": "Select Shared",
-    "ALL_GROUPS": "All templates",
-    "SELECTED_GROUPS": "Selected templates",
-    "NETWORK_RULES": "Network rules",
-    "SELECT_SECURITY_GROUP": "Select a group"
+    "BASED_ON_VALUE": "Batay sa {{ value }}",
+    "BUILD_NEW_GROUP": "Bumuo ng bagong grupo ng seguridad",
+    "SELECT_EXISTING_GROUP": "Pumili ng umiiral na grupo",
+    "CREATE": "Lumikha ng bago",
+    "SELECT_SHARED": "Pumili ng nakabahagi",
+    "ALL_GROUPS": "Lahat ng template",
+    "SELECTED_GROUPS": "Mga napiling template",
+    "NETWORK_RULES": "Mga patakaran ng network",
+    "SELECT_SECURITY_GROUP": "Pumili ng grupo"
   },
   "SERVICE_OFFERING": {
-    "CHANGE_SERVICE_OFFERING": "Change service offering",
-    "CHOOSE_SERVICE_OFFERING": "Choose service offering",
-    "NO_AVAILABLE_OFFERINGS": "No available offerings",
+    "CHANGE_SERVICE_OFFERING": "Palitan ang paghahandong ng serbisyo",
+    "CHOOSE_SERVICE_OFFERING": "Pumili ng paghahandog ng serbisyo",
+    "NO_AVAILABLE_OFFERINGS": "Walang magagamit na paghahandog",
     "CPU_MHZ": "{{ count }}x{{ speed }} MHz",
-    "VM_WILL_BE_REBOOTED": "Virtual machine will be rebooted",
+    "VM_WILL_BE_REBOOTED": "Iri-reboot ang virtual machine",
     "CUSTOM_SERVICE_OFFERING": {
-      "TITLE": "Custom offering",
+      "TITLE": "Pasadyang handog",
       "CPU_NUMBER": "CPU cores",
       "CPU_SPEED": "CPU (MHz)",
       "MEMORY": "Memory (MB)",
-      "BETWEEN": "Between {{ lowerLimit }} and {{ upperLimit }}",
-      "UP_TO": "Up to {{ upperLimit }}",
-      "FROM": "From {{ lowerLimit }}"
+      "BETWEEN": "Pagitan ng {{ lowerLimit }} at {{ upperLimit }}",
+      "UP_TO": "Hanggang sa {{ upperLimit }}",
+      "FROM": "Mula sa {{ lowerLimit }}"
     }
   },
   "SNAPSHOT_POLICIES": {
-    "TITLE": "Recurring snapshots",
-    "SCHEDULED_SNAPSHOTS": "Scheduled snapshots",
-    "NO_RESULTS": "No recurring snapshot schedule",
-    "KEEP": "Keep",
-    "STORE_SNAPSHOTS": "Number of stored snapshots",
-    "MINUTE": "Minute",
-    "TIME": "Time",
+    "TITLE": "Mga snapshots na umuulit",
+    "SCHEDULED_SNAPSHOTS": "Nakatakdang snapshots",
+    "NO_RESULTS": "Walang umuulit na iskedyul ng snapshot",
+    "KEEP": "Panatilihin",
+    "STORE_SNAPSHOTS": "Bilang ng nakalagay na snapshots",
+    "MINUTE": "Minuto",
+    "TIME": "Oras",
     "TIME_ZONE": "Time zone",
-    "HOURLY_TIME": "{{ value }} minute",
+    "HOURLY_TIME": "{{ value }} minuto",
     "DAILY_TIME": "{{ value }}",
     "WEEKLY_TIME": "{{ value }}",
     "MONTHLY_TIME": "{{ value }}",
-    "WEEKLY_PERIOD": "Every {{ value }}",
-    "MONTHLY_PERIOD": "day {{ value }} of month",
-    "HOURLY": "Hourly",
-    "DAILY": "Daily",
-    "WEEKLY": "Weekly",
+    "WEEKLY_PERIOD": "Bawat {{ value }}",
+    "MONTHLY_PERIOD": "araw {{ value }} ng buwan",
+    "HOURLY": "Oras-oras",
+    "DAILY": "Araw-araw",
+    "WEEKLY": "Lingguhan",
     "MONTHLY": "Buwanan",
     "BETWEEN": "Mula {{ lowerLimit }} hanggang {{ upperLimit }}"
   },
