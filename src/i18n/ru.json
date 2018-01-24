@@ -52,7 +52,8 @@
     },
     "SNAPSHOT": {
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот снимок?",
-      "CONFIRM_REVERTING": "Вы уверены, что хотите вернуть владеющий диск к состоянию этого снимка?"
+      "CONFIRM_REVERTING": "Вы уверены, что хотите вернуть владеющий диск к состоянию этого снимка?",
+      "CONFIRM_REVERTING_WITH_VM_REBOOT": "Are you sure you want to revert the owning volume to this snapshot? <b>Virtual Machine will be rebooted.</b>"
     },
     "TAG": {
       "CONFIRM_DELETION": "Вы уверены, что хотите удалить этот тег?"
@@ -92,7 +93,8 @@
     "AUTH": {
       "INCORRECT_USERNAME": "Неверное имя пользователя",
       "INCORRECT_PASSWORD": "Неверный пароль",
-      "INCORRECT_DOMAIN": "Не удалось найти домен {{ val1 }}"
+      "INCORRECT_DOMAIN": "Не удалось найти домен {{ val1 }}",
+      "DISABLED": "User {{ val1 }} (or their account) {{ val2 }} is disabled. Please contact the administrator."
     },
     "ISO": {
       "VMS_IN_USE": "Невозможно удалить ISO файл, так как он используется следующими машинами:<br>{{ vms }}"
@@ -154,7 +156,10 @@
       "TAKE_FAILED": "Не удалось создать снимок",
       "DELETION_IN_PROGRESS": "Удаление снимка",
       "DELETION_DONE": "Снимок удален",
-      "DELETION_FAILED": "Не удалось удалить снимок"
+      "DELETION_FAILED": "Не удалось удалить снимок",
+      "REVERT_IN_PROGRESS": "Reverting a disk",
+      "REVERT_DONE": "Disk reverted",
+      "REVERT_FAILED": "Failed to revert a disk"
     },
     "TEMPLATE": {
       "REGISTER_IN_PROGRESS": "Регистрация шаблона",
