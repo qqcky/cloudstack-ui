@@ -52,7 +52,8 @@
     },
     "SNAPSHOT": {
       "CONFIRM_DELETION": "Sigurado ka bang gusto mong tanggalin ang snapshot na ito?",
-      "CONFIRM_REVERTING": "Sigurado ka bang gusto mong ibalik ang pagmamay-lakas ng tunog sa snapshot na ito?"
+      "CONFIRM_REVERTING": "Sigurado ka bang gusto mong ibalik ang pagmamay-lakas ng tunog sa snapshot na ito?",
+      "CONFIRM_REVERTING_WITH_VM_REBOOT": "Are you sure you want to revert the owning volume to this snapshot? <b>Virtual Machine will be rebooted.</b>"
     },
     "TAG": {
       "CONFIRM_DELETION": "Sigurado ka bang gusto mong tanggalin ang tag na ito?"
@@ -92,7 +93,8 @@
     "AUTH": {
       "INCORRECT_USERNAME": "Mali ang username",
       "INCORRECT_PASSWORD": "Mali ang password",
-      "INCORRECT_DOMAIN": "Hindi mahanap ang domain na {{ val1 }}"
+      "INCORRECT_DOMAIN": "Hindi mahanap ang domain na {{ val1 }}",
+      "DISABLED": "User {{ val1 }} (or their account) {{ val2 }} is disabled. Please contact the administrator."
     },
     "ISO": {
       "VMS_IN_USE": "Hindi matanggal ang ISO sapagkat ito'y ginamit ng mga sumusunod na VM:<br>{{ vms }}"
@@ -154,7 +156,10 @@
       "TAKE_FAILED": "Bigong nakuha ang snapshot",
       "DELETION_IN_PROGRESS": "Nagtatanggal ng snapshot",
       "DELETION_DONE": "Matagumpay na natanggal ang snapshot",
-      "DELETION_FAILED": "Nabigong natanggal ang snapshot"
+      "DELETION_FAILED": "Nabigong natanggal ang snapshot",
+      "REVERT_IN_PROGRESS": "Reverting a disk",
+      "REVERT_DONE": "Disk reverted",
+      "REVERT_FAILED": "Failed to revert a disk"
     },
     "TEMPLATE": {
       "REGISTER_IN_PROGRESS": "Nagrerehistro ng isang template",
