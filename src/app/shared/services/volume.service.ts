@@ -8,6 +8,7 @@ import { AsyncJobService } from './async-job.service';
 import { BaseBackendService } from './base-backend.service';
 import { SnapshotService } from './snapshot.service';
 import { VolumeTagService } from './tags/volume-tag.service';
+import { AsyncJob } from '../models/async-job.model';
 
 export interface VolumeFromSnapshotCreationData {
   name: string;
@@ -50,7 +51,7 @@ export class VolumeService extends BaseBackendService<Volume> {
     return this.sendCommand('resize', params).switchMap(job =>
       this.asyncJobService.queryJob(job, this.entity, this.entityModel)
     )
-      .switchMap(response => Observable.of(response.result.volume))
+      .switchMap((response: AsyncJob<Volume>) => Observable.of(response.jobresult['volume']))
       .do(jobResult => this.onVolumeResized.next(jobResult));
   }
 
@@ -67,7 +68,7 @@ export class VolumeService extends BaseBackendService<Volume> {
   public create(data: VolumeCreationData): Observable<Volume> {
     return this.sendCommand('create', data).switchMap(job =>
       this.asyncJobService.queryJob(job.jobid, this.entity, this.entityModel)
-    ).switchMap(response => Observable.of(response.result.volume));
+    ).switchMap((response: AsyncJob<Volume>)  => Observable.of(response.jobresult['volume']));
   }
 
   public createFromSnapshot(data: VolumeFromSnapshotCreationData): Observable<Volume> {
@@ -80,14 +81,14 @@ export class VolumeService extends BaseBackendService<Volume> {
     return this.sendCommand('detach', { id: volume.id })
       .switchMap(job =>
         this.asyncJobService.queryJob(job, this.entity, this.entityModel)
-      ).switchMap(response => Observable.of(response.result.volume));
+      ).switchMap((response: AsyncJob<Volume>) => Observable.of(response.jobresult['volume']));
   }
 
   public attach(data: VolumeAttachmentData): Observable<Volume> {
     return this.sendCommand('attach', data)
       .switchMap(job =>
         this.asyncJobService.queryJob(job, this.entity, this.entityModel)
-      ).switchMap(response => Observable.of(response.result.volume));
+      ).switchMap((response: AsyncJob<Volume>) => Observable.of(response.jobresult['volume']));
   }
 
   public markForRemoval(volume: Volume): Observable<any> {
