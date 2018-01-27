@@ -157,9 +157,9 @@
       "DELETION_IN_PROGRESS": "Nagtatanggal ng snapshot",
       "DELETION_DONE": "Matagumpay na natanggal ang snapshot",
       "DELETION_FAILED": "Nabigong natanggal ang snapshot",
-      "REVERT_IN_PROGRESS": "Reverting a disk",
-      "REVERT_DONE": "Disk reverted",
-      "REVERT_FAILED": "Failed to revert a disk"
+      "REVERT_IN_PROGRESS": "Nagbabalik ng disk",
+      "REVERT_DONE": "Naibalik ang disk",
+      "REVERT_FAILED": "Bigon naibalik ang disk"
     },
     "TEMPLATE": {
       "REGISTER_IN_PROGRESS": "Nagrerehistro ng isang template",
