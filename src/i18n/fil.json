@@ -92,7 +92,7 @@
     },
     "AUTH": {
       "INCORRECT_USERNAME": "Mali ang username",
-      "INCORRECT_PASSWORD": "Mali ang password",
+      "INCORRECT_CREDENTIALS": "Incorrect username or password",
       "INCORRECT_DOMAIN": "Hindi mahanap ang domain na {{ val1 }}",
       "DISABLED": "User {{ val1 }} (o kanilang account) {{ val2 }} ay hindi pinagana. Mangyaring makipag-ugnayan sa administrator."
     },
