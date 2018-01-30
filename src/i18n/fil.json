@@ -265,6 +265,12 @@
       "USER_CREATED": "User {{ username }} ay matagumpay na nagawa",
       "USER_UPDATED": "User {{ username }} ay matagumpay na nabago",
       "USER_DELETED": "User {{ username }} ay matagumpay na natanggal"
+    },
+    "VOLUME": {
+      "VOLUME_FROM_SNAPSHOT_CREATED": "Volume {{ name }} created successfully"
+    },
+    "SNAPSHOT": {
+      "DELETE_SUCCESS": "Snapshot {{ name }} deleted successfully"
     }
   },
   "AUTH": {
