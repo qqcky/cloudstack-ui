@@ -560,7 +560,8 @@
       "TAG_COPYING": "Nagkokopya ng mga template tag...",
       "DEPLOYMENT_FINISHED": "Natapos na ang deployment",
       "OS_TEMPLATE": "Template ng OS",
-      "NO_TEMPLATES": "Walang magagamit na template"
+      "NO_TEMPLATES": "Walang magagamit na template",
+      "NO_OFFERINGS": "No offerings available"
     }
   },
   "VM_POST_ACTION": {
@@ -604,17 +605,30 @@
     "DETAILS": {
       "GENERAL_INFORMATION": "Pangkalahatang Impormasyon",
       "SIZE": "Laki",
-      "CREATED": "Nalikha",
       "STORAGE_TYPE": "Uri ng paglalagyan",
       "DISK_OFFERING": "Handog ng disk",
-      "DISK_OFFERING_NAME": "Pangalan",
-      "DESCRIPTION": "Paglalarawan",
-      "MIN_IOPS": "Min IO/s",
-      "MAX_IOPS": "Max IO/s",
-      "READ_RATE_MB": "Tulin ng pagbasa",
-      "WRITE_RATE_MB": "Tulin ng pagsulat",
-      "READ_RATE_IOPS": "Tulin ng pagbasa (IO/s)",
-      "WRITE_RATE_IOPS": "Tulin ng pagsulat (IO/s)"
+      "NAME": "NAME",
+      "CREATED": "Nalikha",
+      "name": "Name",
+      "bytesreadrate": "Read MB/s",
+      "byteswriterate": "Write MB/s",
+      "iopsreadrate": "Read IO/s",
+      "iopswriterate": "Write IO/s",
+      "displaytext": "Description",
+      "disksize": "Disk size",
+      "storagetype": "Storage type",
+      "provisioningtype": "Provisioning type",
+      "iscustomized": "Customized",
+      "miniops": "Min IO/s",
+      "maxiops": "Max IO/s",
+      "thin": "Thin",
+      "thick": "Thick",
+      "fat": "Fat",
+      "sparse": "Sparse",
+      "shared": "Shared",
+      "created": "Created",
+      "true": "Yes",
+      "false": "No"
     },
     "SNAPSHOTS": {
       "DESCRIPTION": "Paglalarawan",
@@ -765,6 +779,10 @@
     "CARD": {
       "DESCRIPTION": "Paglalarawan",
       "VM_NAME": "Pangalan ng VM"
+    },
+    "SIDEBAR": {
+      "FIREWALL": "Firewall",
+      "TAGS": "Tags"
     },
     "RULES": {
       "VIEW_TITLE": "Mga patakaran para sa <b>{{ value }}</b>",
@@ -1241,6 +1259,21 @@
       "BETWEEN": "Pagitan ng {{ lowerLimit }} at {{ upperLimit }}",
       "UP_TO": "Hanggang sa {{ upperLimit }}",
       "FROM": "Mula sa {{ lowerLimit }}"
+    },
+    "COLUMN": {
+      "NAME": "Name",
+      "NETWORK_RATE": "Network rate (MB/s)",
+      "CPU_NUMBER": "CPU cores",
+      "CPU_SPEED": "CPU (MHz)",
+      "MEMORY": "Memory (MB)"
+    },
+    "MODES": {
+      "FIXED": "Fixed",
+      "CUSTOM": "Custom"
+    },
+    "FILTERS": {
+      "SELECT_CLASSES": "Select classes",
+      "COMMON": "Common"
     }
   },
   "SNAPSHOT_POLICIES": {
@@ -1371,7 +1404,28 @@
   },
   "ACCOUNT_STATE": {
     "DISABLED": "Hindi pinagana",
-    "ENABLED": "Pinagana",
-    "LOCKED": "Naka-lock"
+    "ENABLED": "Pinagana"
+  },
+  "DISK_OFFERING_TABLE": {
+    "name": "",
+    "bytesreadrate": "Read MB/s",
+    "byteswriterate": "Write MB/s",
+    "iopsreadrate": "Read IO/s",
+    "iopswriterate": "Write IO/s",
+    "displaytext": "Description",
+    "disksize": "Disk size",
+    "storagetype": "Storage type",
+    "provisioningtype": "Provisioning type",
+    "iscustomized": "Customized",
+    "miniops": "Min IO/s",
+    "maxiops": "Max IO/s",
+    "thin": "Thin",
+    "thick": "Thick",
+    "fat": "Fat",
+    "sparse": "Sparse",
+    "shared": "Shared",
+    "created": "Created",
+    "true": "Yes",
+    "false": "No"
   }
 }
