@@ -560,7 +560,8 @@
       "TAG_COPYING": "Копирование тегов из шаблона...",
       "DEPLOYMENT_FINISHED": "Развертывание завершено",
       "OS_TEMPLATE": "ОС шаблон",
-      "NO_TEMPLATES": "Нет доступных шаблонов"
+      "NO_TEMPLATES": "Нет доступных шаблонов",
+      "NO_OFFERINGS": "No offerings available"
     }
   },
   "VM_POST_ACTION": {
@@ -604,17 +605,30 @@
     "DETAILS": {
       "GENERAL_INFORMATION": "Общая информация",
       "SIZE": "Размер",
-      "CREATED": "Создан",
       "STORAGE_TYPE": "Тип хранилища",
       "DISK_OFFERING": "Дисковое предложение",
-      "DISK_OFFERING_NAME": "Название",
-      "DESCRIPTION": "Описание",
-      "MIN_IOPS": "Мин. IO/сек",
-      "MAX_IOPS": "Макс. IO/сек",
-      "READ_RATE_MB": "Скорость чтения",
-      "WRITE_RATE_MB": "Скорость записи",
-      "READ_RATE_IOPS": "Скорость чтения (IO/сек)",
-      "WRITE_RATE_IOPS": "Скорость записи (IO/сек)"
+      "NAME": "NAME",
+      "CREATED": "Создан",
+      "name": "Name",
+      "bytesreadrate": "Read MB/s",
+      "byteswriterate": "Write MB/s",
+      "iopsreadrate": "Read IO/s",
+      "iopswriterate": "Write IO/s",
+      "displaytext": "Description",
+      "disksize": "Disk size",
+      "storagetype": "Storage type",
+      "provisioningtype": "Provisioning type",
+      "iscustomized": "Customized",
+      "miniops": "Min IO/s",
+      "maxiops": "Max IO/s",
+      "thin": "Thin",
+      "thick": "Thick",
+      "fat": "Fat",
+      "sparse": "Sparse",
+      "shared": "Shared",
+      "created": "Created",
+      "true": "Yes",
+      "false": "No"
     },
     "SNAPSHOTS": {
       "DESCRIPTION": "Описание",
@@ -765,6 +779,10 @@
     "CARD": {
       "DESCRIPTION": "Описание",
       "VM_NAME": "Имя ВМ"
+    },
+    "SIDEBAR": {
+      "FIREWALL": "Firewall",
+      "TAGS": "Tags"
     },
     "RULES": {
       "VIEW_TITLE": "Правила группы <b>{{ value }}</b>",
@@ -1241,6 +1259,21 @@
       "BETWEEN": "От {{ lowerLimit }} до {{ upperLimit }}",
       "UP_TO": "До {{ upperLimit }}",
       "FROM": "От {{ lowerLimit }}"
+    },
+    "COLUMN": {
+      "NAME": "Name",
+      "NETWORK_RATE": "Network rate (MB/s)",
+      "CPU_NUMBER": "CPU cores",
+      "CPU_SPEED": "CPU (MHz)",
+      "MEMORY": "Memory (MB)"
+    },
+    "MODES": {
+      "FIXED": "Fixed",
+      "CUSTOM": "Custom"
+    },
+    "FILTERS": {
+      "SELECT_CLASSES": "Select classes",
+      "COMMON": "Common"
     }
   },
   "SNAPSHOT_POLICIES": {
@@ -1371,7 +1404,28 @@
   },
   "ACCOUNT_STATE": {
     "DISABLED": "Деактивирован",
-    "ENABLED": "Активирован",
-    "LOCKED": "Заблокирован"
+    "ENABLED": "Активирован"
+  },
+  "DISK_OFFERING_TABLE": {
+    "name": "",
+    "bytesreadrate": "Read MB/s",
+    "byteswriterate": "Write MB/s",
+    "iopsreadrate": "Read IO/s",
+    "iopswriterate": "Write IO/s",
+    "displaytext": "Description",
+    "disksize": "Disk size",
+    "storagetype": "Storage type",
+    "provisioningtype": "Provisioning type",
+    "iscustomized": "Customized",
+    "miniops": "Min IO/s",
+    "maxiops": "Max IO/s",
+    "thin": "Thin",
+    "thick": "Thick",
+    "fat": "Fat",
+    "sparse": "Sparse",
+    "shared": "Shared",
+    "created": "Created",
+    "true": "Yes",
+    "false": "No"
   }
 }
