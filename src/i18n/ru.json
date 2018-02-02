@@ -577,6 +577,7 @@
     "OPEN_URL": "Открыть URL",
     "VM_PASSWORD": "Пароль",
     "UNKNOWN": "Неизвестно",
+    "NO_INFORMATION": "No information",
     "LOGIN": "Логин",
     "VM": "Имя машины",
     "VM_IP": "IP адрес"
