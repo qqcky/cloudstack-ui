@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/bwsw/cloudstack-ui.svg?branch=master)](https://travis-ci.org/bwsw/cloudstack-ui)
-[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)](https://www.browserstack.com/automate/public-build/<badge_key>)
+[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)](https://www.browserstack.com/automate/public-build/aXlFQTFUOU5nSldwaHRtREM5SGE5byt4ZXNSR2hTejI5VE05RFhhS3dEST0tLVZCS1RmWCt5OVV0TmtXUHpsS3BVMHc9PQ==--999755fa09d98c27d547c1f32ebd71bcd43e10b1)
 
 Table of Contents
 =================
